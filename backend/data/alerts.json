@@ -1,0 +1,4502 @@
+[
+  {
+    "id": 1780331827014,
+    "alert_key": "1780331827013-0.3916105292859474",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1118 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:07.014Z"
+  },
+  {
+    "id": 1780331827013,
+    "alert_key": "1780331827012-0.047634326208091826",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:07.013Z"
+  },
+  {
+    "id": 1780331827012,
+    "alert_key": "1780331827011-0.3143281899345868",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:07.012Z"
+  },
+  {
+    "id": 1780331827002,
+    "alert_key": "1780331827001-0.9252297851740584",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1169 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:07.002Z"
+  },
+  {
+    "id": 1780331827000,
+    "alert_key": "1780331826999-0.2942072061499166",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:07.000Z"
+  },
+  {
+    "id": 1780331826998,
+    "alert_key": "1780331826997-0.36632072080841993",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:06.998Z"
+  },
+  {
+    "id": 1780331823982,
+    "alert_key": "1780331823982-0.9795362313724718",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1147 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.982Z"
+  },
+  {
+    "id": 1780331823981,
+    "alert_key": "1780331823981-0.29238279731335304",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.981Z"
+  },
+  {
+    "id": 1780331823981,
+    "alert_key": "1780331823980-0.7788968296030131",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.981Z"
+  },
+  {
+    "id": 1780331823977,
+    "alert_key": "1780331823977-0.1311640766408173",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.977Z"
+  },
+  {
+    "id": 1780331823976,
+    "alert_key": "1780331823976-0.7968050603857478",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1267 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.976Z"
+  },
+  {
+    "id": 1780331823976,
+    "alert_key": "1780331823975-0.9360663252415168",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.976Z"
+  },
+  {
+    "id": 1780331823975,
+    "alert_key": "1780331823974-0.41228215496674536",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:03.975Z"
+  },
+  {
+    "id": 1780331820962,
+    "alert_key": "1780331820961-0.9406638275059562",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.962Z"
+  },
+  {
+    "id": 1780331820961,
+    "alert_key": "1780331820961-0.9819823965764971",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1259 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.961Z"
+  },
+  {
+    "id": 1780331820961,
+    "alert_key": "1780331820960-0.06435528635990928",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.961Z"
+  },
+  {
+    "id": 1780331820957,
+    "alert_key": "1780331820957-0.5327063509769598",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1284 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.957Z"
+  },
+  {
+    "id": 1780331820957,
+    "alert_key": "1780331820956-0.8641359847101908",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.957Z"
+  },
+  {
+    "id": 1780331820956,
+    "alert_key": "1780331820956-0.580321570747951",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 12.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:37:00.956Z"
+  },
+  {
+    "id": 1780331817941,
+    "alert_key": "1780331817940-0.25549083706514797",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:57.941Z"
+  },
+  {
+    "id": 1780331817940,
+    "alert_key": "1780331817939-0.992847352594854",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1149 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:57.940Z"
+  },
+  {
+    "id": 1780331817938,
+    "alert_key": "1780331817938-0.7715352858030168",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:57.938Z"
+  },
+  {
+    "id": 1780331814915,
+    "alert_key": "1780331814914-0.01953677359042527",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:54.915Z"
+  },
+  {
+    "id": 1780331814913,
+    "alert_key": "1780331814912-0.8227322096207389",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1112 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:54.913Z"
+  },
+  {
+    "id": 1780331814911,
+    "alert_key": "1780331814910-0.5090191447323903",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:54.911Z"
+  },
+  {
+    "id": 1780331811880,
+    "alert_key": "1780331811879-0.6797865548207787",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1225 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:51.880Z"
+  },
+  {
+    "id": 1780331811878,
+    "alert_key": "1780331811877-0.24068914820148468",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:51.878Z"
+  },
+  {
+    "id": 1780331811876,
+    "alert_key": "1780331811875-0.48828206481800585",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:51.876Z"
+  },
+  {
+    "id": 1780331808846,
+    "alert_key": "1780331808846-0.6664762442961677",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:48.846Z"
+  },
+  {
+    "id": 1780331808845,
+    "alert_key": "1780331808844-0.009042356950724861",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1224 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:48.845Z"
+  },
+  {
+    "id": 1780331808843,
+    "alert_key": "1780331808842-0.36191699789224796",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 96.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:48.843Z"
+  },
+  {
+    "id": 1780331808841,
+    "alert_key": "1780331808839-0.5909196467713382",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:48.841Z"
+  },
+  {
+    "id": 1780331805814,
+    "alert_key": "1780331805814-0.0977853341534064",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1246 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:45.814Z"
+  },
+  {
+    "id": 1780331805812,
+    "alert_key": "1780331805811-0.7850294174438831",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:45.812Z"
+  },
+  {
+    "id": 1780331793711,
+    "alert_key": "1780331793711-0.030829603703907416",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1329 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.711Z"
+  },
+  {
+    "id": 1780331793710,
+    "alert_key": "1780331793709-0.75871672905606",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.710Z"
+  },
+  {
+    "id": 1780331793701,
+    "alert_key": "1780331793700-0.6876697383106616",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.701Z"
+  },
+  {
+    "id": 1780331793700,
+    "alert_key": "1780331793699-0.2936482271908004",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1276 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.700Z"
+  },
+  {
+    "id": 1780331793698,
+    "alert_key": "1780331793698-0.14490599764593615",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.698Z"
+  },
+  {
+    "id": 1780331793697,
+    "alert_key": "1780331793696-0.6879316536520884",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:33.697Z"
+  },
+  {
+    "id": 1780331790679,
+    "alert_key": "1780331790678-0.03694930340683911",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1190 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:30.679Z"
+  },
+  {
+    "id": 1780331790678,
+    "alert_key": "1780331790677-0.2509954753660286",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:30.678Z"
+  },
+  {
+    "id": 1780331790670,
+    "alert_key": "1780331790670-0.4450017498653558",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1094 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:30.671Z"
+  },
+  {
+    "id": 1780331790669,
+    "alert_key": "1780331790668-0.5887586456477139",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:30.669Z"
+  },
+  {
+    "id": 1780331790667,
+    "alert_key": "1780331790666-0.8534197134526025",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:30.667Z"
+  },
+  {
+    "id": 1780331787647,
+    "alert_key": "1780331787646-0.19098702411639856",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1245 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.647Z"
+  },
+  {
+    "id": 1780331787646,
+    "alert_key": "1780331787645-0.519902803133822",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.646Z"
+  },
+  {
+    "id": 1780331787645,
+    "alert_key": "1780331787644-0.9481475785776595",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 11.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.645Z"
+  },
+  {
+    "id": 1780331787636,
+    "alert_key": "1780331787635-0.6558649021556142",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.636Z"
+  },
+  {
+    "id": 1780331787634,
+    "alert_key": "1780331787633-0.03805144574518404",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1218 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.634Z"
+  },
+  {
+    "id": 1780331787632,
+    "alert_key": "1780331787631-0.2459454422316375",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:27.632Z"
+  },
+  {
+    "id": 1780331784612,
+    "alert_key": "1780331784612-0.6203446801865266",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.612Z"
+  },
+  {
+    "id": 1780331784611,
+    "alert_key": "1780331784611-0.2784248907914447",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1371 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.611Z"
+  },
+  {
+    "id": 1780331784610,
+    "alert_key": "1780331784609-0.5053001535247331",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.610Z"
+  },
+  {
+    "id": 1780331784609,
+    "alert_key": "1780331784607-0.5086398501085836",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.609Z"
+  },
+  {
+    "id": 1780331784597,
+    "alert_key": "1780331784597-0.9818961343837258",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1230 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.597Z"
+  },
+  {
+    "id": 1780331784596,
+    "alert_key": "1780331784594-0.477019608459042",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.596Z"
+  },
+  {
+    "id": 1780331784593,
+    "alert_key": "1780331784592-0.2729488770553744",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:24.593Z"
+  },
+  {
+    "id": 1780331781572,
+    "alert_key": "1780331781572-0.7468660881342507",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.572Z"
+  },
+  {
+    "id": 1780331781571,
+    "alert_key": "1780331781570-0.8470793176876925",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1266 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.571Z"
+  },
+  {
+    "id": 1780331781570,
+    "alert_key": "1780331781569-0.6891335287276922",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.570Z"
+  },
+  {
+    "id": 1780331781569,
+    "alert_key": "1780331781568-0.249915095529751",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.569Z"
+  },
+  {
+    "id": 1780331781561,
+    "alert_key": "1780331781560-0.5299385831622967",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1272 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.561Z"
+  },
+  {
+    "id": 1780331781559,
+    "alert_key": "1780331781557-0.4896511898490654",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.559Z"
+  },
+  {
+    "id": 1780331781556,
+    "alert_key": "1780331781555-0.9501116415153034",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:21.556Z"
+  },
+  {
+    "id": 1780331778541,
+    "alert_key": "1780331778541-0.42602154630493105",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1133 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.541Z"
+  },
+  {
+    "id": 1780331778540,
+    "alert_key": "1780331778540-0.5150295117461507",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.540Z"
+  },
+  {
+    "id": 1780331778536,
+    "alert_key": "1780331778535-0.18245895835583836",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.536Z"
+  },
+  {
+    "id": 1780331778535,
+    "alert_key": "1780331778534-0.015061769694767468",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1296 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.535Z"
+  },
+  {
+    "id": 1780331778534,
+    "alert_key": "1780331778533-0.5036451983501158",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.534Z"
+  },
+  {
+    "id": 1780331778533,
+    "alert_key": "1780331778532-0.7932885257335232",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:18.533Z"
+  },
+  {
+    "id": 1780331775519,
+    "alert_key": "1780331775519-0.40679176694169994",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1384 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.519Z"
+  },
+  {
+    "id": 1780331775518,
+    "alert_key": "1780331775518-0.8520437279391021",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.518Z"
+  },
+  {
+    "id": 1780331775517,
+    "alert_key": "1780331775516-0.09999953329540923",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.517Z"
+  },
+  {
+    "id": 1780331775509,
+    "alert_key": "1780331775509-0.0884902664040399",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1051 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.509Z"
+  },
+  {
+    "id": 1780331775508,
+    "alert_key": "1780331775506-0.9284914128207015",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.508Z"
+  },
+  {
+    "id": 1780331775505,
+    "alert_key": "1780331775504-0.8243838382493809",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:15.505Z"
+  },
+  {
+    "id": 1780331772485,
+    "alert_key": "1780331772485-0.2536053076316963",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:12.485Z"
+  },
+  {
+    "id": 1780331772484,
+    "alert_key": "1780331772483-0.3113779932716032",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1231 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:12.484Z"
+  },
+  {
+    "id": 1780331772482,
+    "alert_key": "1780331772481-0.5486631434386516",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:12.482Z"
+  },
+  {
+    "id": 1780331772481,
+    "alert_key": "1780331772480-0.18418514199012592",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:12.481Z"
+  },
+  {
+    "id": 1780331769450,
+    "alert_key": "1780331769449-0.6702998448968772",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1241 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:09.450Z"
+  },
+  {
+    "id": 1780331769448,
+    "alert_key": "1780331769447-0.4379684040318609",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:09.448Z"
+  },
+  {
+    "id": 1780331769446,
+    "alert_key": "1780331769445-0.4986911051361467",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:36:09.446Z"
+  },
+  {
+    "id": 1780331757323,
+    "alert_key": "1780331757322-0.30583677074235704",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:57.323Z"
+  },
+  {
+    "id": 1780331757313,
+    "alert_key": "1780331757312-0.001214681958508601",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:57.313Z"
+  },
+  {
+    "id": 1780331757311,
+    "alert_key": "1780331757310-0.524000154621843",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:57.311Z"
+  },
+  {
+    "id": 1780331757309,
+    "alert_key": "1780331757307-0.9836395311258581",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:57.309Z"
+  },
+  {
+    "id": 1780331754279,
+    "alert_key": "1780331754278-0.6189375192433701",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:54.279Z"
+  },
+  {
+    "id": 1780331754277,
+    "alert_key": "1780331754277-0.08257632646640067",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1200 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:54.277Z"
+  },
+  {
+    "id": 1780331754275,
+    "alert_key": "1780331754274-0.6987942535073316",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:54.275Z"
+  },
+  {
+    "id": 1780331754273,
+    "alert_key": "1780331754272-0.7853356567284434",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:54.273Z"
+  },
+  {
+    "id": 1780331751244,
+    "alert_key": "1780331751244-0.41928964682450054",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1181 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:51.244Z"
+  },
+  {
+    "id": 1780331751243,
+    "alert_key": "1780331751242-0.35683120683636127",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:51.243Z"
+  },
+  {
+    "id": 1780331751240,
+    "alert_key": "1780331751238-0.29826366372957647",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:51.240Z"
+  },
+  {
+    "id": 1780331748216,
+    "alert_key": "1780331748215-0.042062671093878845",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1071 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:48.216Z"
+  },
+  {
+    "id": 1780331748214,
+    "alert_key": "1780331748214-0.6961840196724761",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:48.214Z"
+  },
+  {
+    "id": 1780331748213,
+    "alert_key": "1780331748212-0.9790060252574594",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:48.213Z"
+  },
+  {
+    "id": 1780331736105,
+    "alert_key": "1780331736104-0.6197481497051447",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1103 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:36.105Z"
+  },
+  {
+    "id": 1780331736103,
+    "alert_key": "1780331736102-0.6349987111477755",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 95.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:36.103Z"
+  },
+  {
+    "id": 1780331733067,
+    "alert_key": "1780331733066-0.45883596991176767",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1007 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:33.067Z"
+  },
+  {
+    "id": 1780331730038,
+    "alert_key": "1780331730037-0.5753414628633478",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1052 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:30.038Z"
+  },
+  {
+    "id": 1780331730037,
+    "alert_key": "1780331730036-0.9384772470050927",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 95.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:30.037Z"
+  },
+  {
+    "id": 1780331730035,
+    "alert_key": "1780331730035-0.6114862612173007",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:30.035Z"
+  },
+  {
+    "id": 1780331727006,
+    "alert_key": "1780331727005-0.8173345976316214",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 95.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:27.006Z"
+  },
+  {
+    "id": 1780331727005,
+    "alert_key": "1780331727004-0.7784172228961549",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:27.005Z"
+  },
+  {
+    "id": 1780331726989,
+    "alert_key": "1780331726988-0.6137910449068777",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:26.989Z"
+  },
+  {
+    "id": 1780331726987,
+    "alert_key": "1780331726986-0.668374803948202",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1280 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:26.987Z"
+  },
+  {
+    "id": 1780331726986,
+    "alert_key": "1780331726985-0.3047249580750955",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:26.986Z"
+  },
+  {
+    "id": 1780331726983,
+    "alert_key": "1780331726982-0.8718017473533227",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:26.983Z"
+  },
+  {
+    "id": 1780331723953,
+    "alert_key": "1780331723953-0.6629432820501495",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1021 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:23.953Z"
+  },
+  {
+    "id": 1780331723951,
+    "alert_key": "1780331723950-0.4146359950074605",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 96.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:23.951Z"
+  },
+  {
+    "id": 1780331723949,
+    "alert_key": "1780331723948-0.5715675948166933",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:23.949Z"
+  },
+  {
+    "id": 1780331720918,
+    "alert_key": "1780331720917-0.16920660021530753",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1106 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:20.918Z"
+  },
+  {
+    "id": 1780331720916,
+    "alert_key": "1780331720915-0.7758081285236517",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:20.916Z"
+  },
+  {
+    "id": 1780331717903,
+    "alert_key": "1780331717902-0.22977705603349252",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1115 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.903Z"
+  },
+  {
+    "id": 1780331717901,
+    "alert_key": "1780331717901-0.725414531154354",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 99.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.901Z"
+  },
+  {
+    "id": 1780331717900,
+    "alert_key": "1780331717900-0.14798511460785113",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.900Z"
+  },
+  {
+    "id": 1780331717884,
+    "alert_key": "1780331717884-0.7499105270248958",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1293 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.884Z"
+  },
+  {
+    "id": 1780331717882,
+    "alert_key": "1780331717881-0.796233391008096",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.882Z"
+  },
+  {
+    "id": 1780331717880,
+    "alert_key": "1780331717879-0.03684502071350626",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:17.880Z"
+  },
+  {
+    "id": 1780331714865,
+    "alert_key": "1780331714864-0.03743231501283717",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:14.865Z"
+  },
+  {
+    "id": 1780331714848,
+    "alert_key": "1780331714847-0.43563313543315274",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1262 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:14.848Z"
+  },
+  {
+    "id": 1780331714845,
+    "alert_key": "1780331714844-0.38459896870339494",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:14.845Z"
+  },
+  {
+    "id": 1780331711831,
+    "alert_key": "1780331711830-0.5905521003994567",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:11.831Z"
+  },
+  {
+    "id": 1780331711829,
+    "alert_key": "1780331711829-0.03538834268672997",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1062 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:11.829Z"
+  },
+  {
+    "id": 1780331711828,
+    "alert_key": "1780331711828-0.5499155576550714",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:11.828Z"
+  },
+  {
+    "id": 1780331711816,
+    "alert_key": "1780331711815-0.4178451874316548",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1062 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:11.816Z"
+  },
+  {
+    "id": 1780331711813,
+    "alert_key": "1780331711812-0.9293322052796434",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:11.813Z"
+  },
+  {
+    "id": 1780331708798,
+    "alert_key": "1780331708798-0.9862206873422674",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1056 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:08.798Z"
+  },
+  {
+    "id": 1780331708797,
+    "alert_key": "1780331708796-0.515467330445972",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 97.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:08.797Z"
+  },
+  {
+    "id": 1780331708782,
+    "alert_key": "1780331708781-0.7536388411709931",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1094 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:08.782Z"
+  },
+  {
+    "id": 1780331708780,
+    "alert_key": "1780331708779-0.11007293713954502",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:08.780Z"
+  },
+  {
+    "id": 1780331708778,
+    "alert_key": "1780331708777-0.07486455888887755",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:08.778Z"
+  },
+  {
+    "id": 1780331705762,
+    "alert_key": "1780331705762-0.717278284220212",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 99.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:05.762Z"
+  },
+  {
+    "id": 1780331705745,
+    "alert_key": "1780331705744-0.8308523744412633",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:05.745Z"
+  },
+  {
+    "id": 1780331705742,
+    "alert_key": "1780331705741-0.2236468808023726",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:05.742Z"
+  },
+  {
+    "id": 1780331702728,
+    "alert_key": "1780331702727-0.0544729516698883",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:02.728Z"
+  },
+  {
+    "id": 1780331702712,
+    "alert_key": "1780331702711-0.21780420788540567",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1115 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:02.712Z"
+  },
+  {
+    "id": 1780331702710,
+    "alert_key": "1780331702709-0.02654680916909069",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:02.710Z"
+  },
+  {
+    "id": 1780331702708,
+    "alert_key": "1780331702706-0.18724921929332705",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:35:02.708Z"
+  },
+  {
+    "id": 1780331681515,
+    "alert_key": "1780331681514-0.9364752294010035",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1059 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:41.515Z"
+  },
+  {
+    "id": 1780331681513,
+    "alert_key": "1780331681512-0.5502171964280239",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 98.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:41.513Z"
+  },
+  {
+    "id": 1780331678485,
+    "alert_key": "1780331678484-0.9785561647179374",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 95.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:38.485Z"
+  },
+  {
+    "id": 1780331675466,
+    "alert_key": "1780331675465-0.08771709336813849",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1098 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:35.466Z"
+  },
+  {
+    "id": 1780331672436,
+    "alert_key": "1780331672436-0.9945048042223451",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.436Z"
+  },
+  {
+    "id": 1780331672435,
+    "alert_key": "1780331672434-0.6534907950009348",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1042 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.435Z"
+  },
+  {
+    "id": 1780331672428,
+    "alert_key": "1780331672427-0.6765172954862521",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.428Z"
+  },
+  {
+    "id": 1780331672427,
+    "alert_key": "1780331672426-0.08632298311496511",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1059 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.427Z"
+  },
+  {
+    "id": 1780331672425,
+    "alert_key": "1780331672424-0.8693276468252559",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.425Z"
+  },
+  {
+    "id": 1780331672423,
+    "alert_key": "1780331672423-0.38370937736386546",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.423Z"
+  },
+  {
+    "id": 1780331672413,
+    "alert_key": "1780331672412-0.40224116729836845",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:32.413Z"
+  },
+  {
+    "id": 1780331669391,
+    "alert_key": "1780331669391-0.5380072287209425",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:29.391Z"
+  },
+  {
+    "id": 1780331669390,
+    "alert_key": "1780331669389-0.5861931941236166",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1312 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:29.390Z"
+  },
+  {
+    "id": 1780331669388,
+    "alert_key": "1780331669387-0.6309370225693066",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:29.388Z"
+  },
+  {
+    "id": 1780331666359,
+    "alert_key": "1780331666358-0.8648510127695074",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1327 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:26.359Z"
+  },
+  {
+    "id": 1780331666357,
+    "alert_key": "1780331666356-0.14845478931540612",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.4%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:26.357Z"
+  },
+  {
+    "id": 1780331666356,
+    "alert_key": "1780331666355-0.8926900204860427",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:26.356Z"
+  },
+  {
+    "id": 1780331663326,
+    "alert_key": "1780331663326-0.789120287965159",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1374 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:23.326Z"
+  },
+  {
+    "id": 1780331663325,
+    "alert_key": "1780331663325-0.5439035646440462",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:23.325Z"
+  },
+  {
+    "id": 1780331663323,
+    "alert_key": "1780331663322-0.5138454319463341",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:23.323Z"
+  },
+  {
+    "id": 1780331660294,
+    "alert_key": "1780331660293-0.7641489897742515",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:20.294Z"
+  },
+  {
+    "id": 1780331660292,
+    "alert_key": "1780331660291-0.6508846564260561",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1132 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:20.292Z"
+  },
+  {
+    "id": 1780331660291,
+    "alert_key": "1780331660290-0.19168700318960463",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:20.291Z"
+  },
+  {
+    "id": 1780331657262,
+    "alert_key": "1780331657261-0.6713102419408451",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1114 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:17.262Z"
+  },
+  {
+    "id": 1780331657260,
+    "alert_key": "1780331657259-0.7272159331517447",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:17.260Z"
+  },
+  {
+    "id": 1780331657259,
+    "alert_key": "1780331657258-0.4013334730862276",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:17.259Z"
+  },
+  {
+    "id": 1780331654236,
+    "alert_key": "1780331654236-0.7249355136205871",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:14.236Z"
+  },
+  {
+    "id": 1780331654229,
+    "alert_key": "1780331654228-0.9450944511748306",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1352 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:14.229Z"
+  },
+  {
+    "id": 1780331654227,
+    "alert_key": "1780331654226-0.5673536835446902",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:14.227Z"
+  },
+  {
+    "id": 1780331654225,
+    "alert_key": "1780331654224-0.7479412039634289",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:14.225Z"
+  },
+  {
+    "id": 1780331651203,
+    "alert_key": "1780331651202-0.5324159013009437",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1099 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:11.203Z"
+  },
+  {
+    "id": 1780331651201,
+    "alert_key": "1780331651201-0.6488059565164463",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 95.7%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:11.201Z"
+  },
+  {
+    "id": 1780331651193,
+    "alert_key": "1780331651192-0.40500931546543395",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1325 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:11.193Z"
+  },
+  {
+    "id": 1780331651192,
+    "alert_key": "1780331651191-0.0934863987799166",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:11.192Z"
+  },
+  {
+    "id": 1780331648169,
+    "alert_key": "1780331648169-0.0722637419926565",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:08.169Z"
+  },
+  {
+    "id": 1780331648168,
+    "alert_key": "1780331648168-0.7700426767204182",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1159 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:08.168Z"
+  },
+  {
+    "id": 1780331648161,
+    "alert_key": "1780331648160-0.887141524226984",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1383 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:08.161Z"
+  },
+  {
+    "id": 1780331648159,
+    "alert_key": "1780331648159-0.057596874962979716",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:08.159Z"
+  },
+  {
+    "id": 1780331648158,
+    "alert_key": "1780331648157-0.5667790788147582",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:08.158Z"
+  },
+  {
+    "id": 1780331645134,
+    "alert_key": "1780331645133-0.01779386307722397",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:05.134Z"
+  },
+  {
+    "id": 1780331645133,
+    "alert_key": "1780331645132-0.08737531405840038",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1085 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:05.133Z"
+  },
+  {
+    "id": 1780331645131,
+    "alert_key": "1780331645130-0.6843031861030815",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:34:05.131Z"
+  },
+  {
+    "id": 1780331639071,
+    "alert_key": "1780331639071-0.9501700663782088",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 97.7%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:33:59.071Z"
+  },
+  {
+    "id": 1780331639071,
+    "alert_key": "1780331639070-0.6406734694919197",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:33:59.071Z"
+  },
+  {
+    "id": 1780331639059,
+    "alert_key": "1780331639057-0.43507126730468426",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:33:59.059Z"
+  },
+  {
+    "id": 1780331590582,
+    "alert_key": "1780331590581-0.35966649928716277",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:33:10.582Z"
+  },
+  {
+    "id": 1780331575441,
+    "alert_key": "1780331575439-0.38750549492575415",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:55.441Z"
+  },
+  {
+    "id": 1780331566361,
+    "alert_key": "1780331566360-0.4797862567854668",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:46.361Z"
+  },
+  {
+    "id": 1780331566360,
+    "alert_key": "1780331566359-0.6571708515501317",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1217 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:46.360Z"
+  },
+  {
+    "id": 1780331566357,
+    "alert_key": "1780331566356-0.023743914887437656",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:46.357Z"
+  },
+  {
+    "id": 1780331566355,
+    "alert_key": "1780331566354-0.029497441662460266",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:46.355Z"
+  },
+  {
+    "id": 1780331563328,
+    "alert_key": "1780331563328-0.3961919473147969",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1128 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:43.328Z"
+  },
+  {
+    "id": 1780331563327,
+    "alert_key": "1780331563326-0.10646131060332309",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:43.327Z"
+  },
+  {
+    "id": 1780331560296,
+    "alert_key": "1780331560295-0.5566173739596161",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1386 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:40.296Z"
+  },
+  {
+    "id": 1780331560294,
+    "alert_key": "1780331560293-0.65071403935748",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:40.294Z"
+  },
+  {
+    "id": 1780331557270,
+    "alert_key": "1780331557269-0.8600795182814911",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:37.270Z"
+  },
+  {
+    "id": 1780331557268,
+    "alert_key": "1780331557267-0.5222229410790376",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1294 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:37.268Z"
+  },
+  {
+    "id": 1780331557266,
+    "alert_key": "1780331557265-0.7065950182363666",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:37.266Z"
+  },
+  {
+    "id": 1780331554235,
+    "alert_key": "1780331554234-0.7334126023956564",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1272 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:34.235Z"
+  },
+  {
+    "id": 1780331554233,
+    "alert_key": "1780331554231-0.5636012623900366",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:34.233Z"
+  },
+  {
+    "id": 1780331548168,
+    "alert_key": "1780331548168-0.9742627476129545",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:28.168Z"
+  },
+  {
+    "id": 1780331548167,
+    "alert_key": "1780331548167-0.4056493057089734",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1251 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:28.167Z"
+  },
+  {
+    "id": 1780331548166,
+    "alert_key": "1780331548165-0.8512428714697068",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:28.166Z"
+  },
+  {
+    "id": 1780331545139,
+    "alert_key": "1780331545138-0.7378958897530635",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:25.139Z"
+  },
+  {
+    "id": 1780331545137,
+    "alert_key": "1780331545136-0.6561365893383206",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1331 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:25.137Z"
+  },
+  {
+    "id": 1780331545135,
+    "alert_key": "1780331545134-0.2742548625444331",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 97.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:25.135Z"
+  },
+  {
+    "id": 1780331542106,
+    "alert_key": "1780331542105-0.2723447697134975",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1338 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:22.106Z"
+  },
+  {
+    "id": 1780331542104,
+    "alert_key": "1780331542103-0.5439347314111795",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:22.104Z"
+  },
+  {
+    "id": 1780331542102,
+    "alert_key": "1780331542101-0.301097248430342",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:22.102Z"
+  },
+  {
+    "id": 1780331539072,
+    "alert_key": "1780331539071-0.9819836376741168",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:19.072Z"
+  },
+  {
+    "id": 1780331539070,
+    "alert_key": "1780331539069-0.4961234678245401",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1137 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:19.070Z"
+  },
+  {
+    "id": 1780331539069,
+    "alert_key": "1780331539068-0.2846768665687853",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:19.069Z"
+  },
+  {
+    "id": 1780331536039,
+    "alert_key": "1780331536038-0.4899242033829404",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1196 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:16.039Z"
+  },
+  {
+    "id": 1780331536037,
+    "alert_key": "1780331536036-0.587415173946546",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:16.037Z"
+  },
+  {
+    "id": 1780331536035,
+    "alert_key": "1780331536034-0.9865337499454184",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:16.035Z"
+  },
+  {
+    "id": 1780331533007,
+    "alert_key": "1780331533006-0.7902613398179986",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:13.007Z"
+  },
+  {
+    "id": 1780331533005,
+    "alert_key": "1780331533004-0.8709542700177861",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1209 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:13.005Z"
+  },
+  {
+    "id": 1780331533004,
+    "alert_key": "1780331533003-0.5483359559767583",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:13.004Z"
+  },
+  {
+    "id": 1780331533001,
+    "alert_key": "1780331533001-0.6549937479658235",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:13.001Z"
+  },
+  {
+    "id": 1780331529979,
+    "alert_key": "1780331529978-0.2846744323862914",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1067 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.979Z"
+  },
+  {
+    "id": 1780331529978,
+    "alert_key": "1780331529977-0.14064700748786263",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.978Z"
+  },
+  {
+    "id": 1780331529970,
+    "alert_key": "1780331529970-0.3297808309610485",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.970Z"
+  },
+  {
+    "id": 1780331529969,
+    "alert_key": "1780331529968-0.9251374910976227",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1274 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.969Z"
+  },
+  {
+    "id": 1780331529967,
+    "alert_key": "1780331529967-0.6457639754267006",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.967Z"
+  },
+  {
+    "id": 1780331529966,
+    "alert_key": "1780331529965-0.5461080283795849",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:09.966Z"
+  },
+  {
+    "id": 1780331526942,
+    "alert_key": "1780331526941-0.9655615169620693",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1110 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:06.942Z"
+  },
+  {
+    "id": 1780331526941,
+    "alert_key": "1780331526940-0.3129646266451517",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:06.941Z"
+  },
+  {
+    "id": 1780331523912,
+    "alert_key": "1780331523911-0.7182827589619889",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.912Z"
+  },
+  {
+    "id": 1780331523911,
+    "alert_key": "1780331523910-0.4604496607306193",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.911Z"
+  },
+  {
+    "id": 1780331523905,
+    "alert_key": "1780331523904-0.7402934104884055",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1369 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.905Z"
+  },
+  {
+    "id": 1780331523904,
+    "alert_key": "1780331523903-0.48936194566135793",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.904Z"
+  },
+  {
+    "id": 1780331523902,
+    "alert_key": "1780331523901-0.9745438932265904",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.902Z"
+  },
+  {
+    "id": 1780331523892,
+    "alert_key": "1780331523892-0.048827934871143786",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1092 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.892Z"
+  },
+  {
+    "id": 1780331523891,
+    "alert_key": "1780331523890-0.28103930650450837",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 96.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.891Z"
+  },
+  {
+    "id": 1780331523889,
+    "alert_key": "1780331523888-0.1728280964362635",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:03.889Z"
+  },
+  {
+    "id": 1780331520877,
+    "alert_key": "1780331520877-0.972256345986844",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.877Z"
+  },
+  {
+    "id": 1780331520876,
+    "alert_key": "1780331520876-0.95252522454699",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.876Z"
+  },
+  {
+    "id": 1780331520870,
+    "alert_key": "1780331520869-0.3421466886104435",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.870Z"
+  },
+  {
+    "id": 1780331520869,
+    "alert_key": "1780331520868-0.11053218683671606",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1285 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.869Z"
+  },
+  {
+    "id": 1780331520867,
+    "alert_key": "1780331520867-0.22215596656353143",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.867Z"
+  },
+  {
+    "id": 1780331520861,
+    "alert_key": "1780331520860-0.04436900955744705",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1264 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.861Z"
+  },
+  {
+    "id": 1780331520859,
+    "alert_key": "1780331520858-0.3828880712156062",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:32:00.859Z"
+  },
+  {
+    "id": 1780331517845,
+    "alert_key": "1780331517845-0.3276295647991001",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.845Z"
+  },
+  {
+    "id": 1780331517845,
+    "alert_key": "1780331517844-0.8677992022428291",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1137 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.845Z"
+  },
+  {
+    "id": 1780331517844,
+    "alert_key": "1780331517843-0.4412555999258926",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.844Z"
+  },
+  {
+    "id": 1780331517838,
+    "alert_key": "1780331517837-0.9777554538833352",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.838Z"
+  },
+  {
+    "id": 1780331517836,
+    "alert_key": "1780331517836-0.37224539383802724",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1358 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.836Z"
+  },
+  {
+    "id": 1780331517835,
+    "alert_key": "1780331517835-0.722363073386343",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.835Z"
+  },
+  {
+    "id": 1780331517834,
+    "alert_key": "1780331517833-0.3433950107958711",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.834Z"
+  },
+  {
+    "id": 1780331517825,
+    "alert_key": "1780331517824-0.27734899960767245",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.825Z"
+  },
+  {
+    "id": 1780331517823,
+    "alert_key": "1780331517823-0.19760079187526536",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1181 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.823Z"
+  },
+  {
+    "id": 1780331517822,
+    "alert_key": "1780331517821-0.48791305019911957",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.822Z"
+  },
+  {
+    "id": 1780331517819,
+    "alert_key": "1780331517818-0.8557161494627958",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:57.819Z"
+  },
+  {
+    "id": 1780331514805,
+    "alert_key": "1780331514805-0.9649232094182697",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.805Z"
+  },
+  {
+    "id": 1780331514799,
+    "alert_key": "1780331514798-0.47790929662724846",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.799Z"
+  },
+  {
+    "id": 1780331514798,
+    "alert_key": "1780331514797-0.002203131508042855",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1154 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.798Z"
+  },
+  {
+    "id": 1780331514797,
+    "alert_key": "1780331514796-0.7712969494781503",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.797Z"
+  },
+  {
+    "id": 1780331514795,
+    "alert_key": "1780331514794-0.9414139735268914",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.795Z"
+  },
+  {
+    "id": 1780331514785,
+    "alert_key": "1780331514784-0.9636614781630042",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1105 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.785Z"
+  },
+  {
+    "id": 1780331514783,
+    "alert_key": "1780331514782-0.803098145690497",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.783Z"
+  },
+  {
+    "id": 1780331514782,
+    "alert_key": "1780331514780-0.3504196443795108",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:54.782Z"
+  },
+  {
+    "id": 1780331511768,
+    "alert_key": "1780331511767-0.07713209688679679",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.768Z"
+  },
+  {
+    "id": 1780331511761,
+    "alert_key": "1780331511761-0.2586353190452876",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.761Z"
+  },
+  {
+    "id": 1780331511760,
+    "alert_key": "1780331511760-0.7393740098284669",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1281 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.760Z"
+  },
+  {
+    "id": 1780331511759,
+    "alert_key": "1780331511758-0.6914612842573947",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.759Z"
+  },
+  {
+    "id": 1780331511750,
+    "alert_key": "1780331511749-0.7171768724305819",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1283 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.750Z"
+  },
+  {
+    "id": 1780331511748,
+    "alert_key": "1780331511747-0.6863026085280347",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.748Z"
+  },
+  {
+    "id": 1780331511746,
+    "alert_key": "1780331511745-0.7438631665203703",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:51.746Z"
+  },
+  {
+    "id": 1780331508731,
+    "alert_key": "1780331508731-0.6121911324096557",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.731Z"
+  },
+  {
+    "id": 1780331508725,
+    "alert_key": "1780331508724-0.6275477392273824",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1361 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.725Z"
+  },
+  {
+    "id": 1780331508723,
+    "alert_key": "1780331508722-0.32157722332922034",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.723Z"
+  },
+  {
+    "id": 1780331508714,
+    "alert_key": "1780331508713-0.057140185301473134",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1128 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.714Z"
+  },
+  {
+    "id": 1780331508712,
+    "alert_key": "1780331508711-0.09511411611344811",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.712Z"
+  },
+  {
+    "id": 1780331508709,
+    "alert_key": "1780331508708-0.5446404163990732",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:48.709Z"
+  },
+  {
+    "id": 1780331505694,
+    "alert_key": "1780331505694-0.6024291988677637",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1171 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.694Z"
+  },
+  {
+    "id": 1780331505688,
+    "alert_key": "1780331505687-0.8948475723936092",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.688Z"
+  },
+  {
+    "id": 1780331505687,
+    "alert_key": "1780331505686-0.10366018273221189",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1119 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.687Z"
+  },
+  {
+    "id": 1780331505685,
+    "alert_key": "1780331505684-0.49498005218107854",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.685Z"
+  },
+  {
+    "id": 1780331505683,
+    "alert_key": "1780331505683-0.7788638573144636",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.683Z"
+  },
+  {
+    "id": 1780331505674,
+    "alert_key": "1780331505673-0.10134608381726107",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.4%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.674Z"
+  },
+  {
+    "id": 1780331505672,
+    "alert_key": "1780331505671-0.29314776481389804",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:45.672Z"
+  },
+  {
+    "id": 1780331502659,
+    "alert_key": "1780331502658-0.762504552018758",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:42.659Z"
+  },
+  {
+    "id": 1780331502658,
+    "alert_key": "1780331502657-0.15371707887962927",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 98.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:42.658Z"
+  },
+  {
+    "id": 1780331502651,
+    "alert_key": "1780331502651-0.1741501285975161",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1082 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:42.651Z"
+  },
+  {
+    "id": 1780331502650,
+    "alert_key": "1780331502649-0.3535283317202922",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:42.650Z"
+  },
+  {
+    "id": 1780331502648,
+    "alert_key": "1780331502647-0.3725604017549038",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:42.648Z"
+  },
+  {
+    "id": 1780331499625,
+    "alert_key": "1780331499624-0.5726618011675306",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:39.625Z"
+  },
+  {
+    "id": 1780331496595,
+    "alert_key": "1780331496595-0.9035782344930399",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1178 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:36.595Z"
+  },
+  {
+    "id": 1780331496594,
+    "alert_key": "1780331496593-0.1567093475442416",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 96.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:36.594Z"
+  },
+  {
+    "id": 1780331496593,
+    "alert_key": "1780331496591-0.32833812740854296",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:36.593Z"
+  },
+  {
+    "id": 1780331487486,
+    "alert_key": "1780331487485-0.20808168115958559",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1212 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:27.486Z"
+  },
+  {
+    "id": 1780331487484,
+    "alert_key": "1780331487483-0.7142116506880777",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:27.484Z"
+  },
+  {
+    "id": 1780331487482,
+    "alert_key": "1780331487481-0.14134404042229542",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:27.482Z"
+  },
+  {
+    "id": 1780331484454,
+    "alert_key": "1780331484454-0.015286406916544482",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:24.454Z"
+  },
+  {
+    "id": 1780331484453,
+    "alert_key": "1780331484451-0.5948799936005755",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:24.453Z"
+  },
+  {
+    "id": 1780331484450,
+    "alert_key": "1780331484449-0.21582443299741783",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:24.450Z"
+  },
+  {
+    "id": 1780331481425,
+    "alert_key": "1780331481424-0.7414186498442388",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:21.425Z"
+  },
+  {
+    "id": 1780331481423,
+    "alert_key": "1780331481422-0.10252210491917013",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1021 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:21.423Z"
+  },
+  {
+    "id": 1780331481421,
+    "alert_key": "1780331481420-0.8015103767461943",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:21.421Z"
+  },
+  {
+    "id": 1780331478402,
+    "alert_key": "1780331478401-0.40939524202972066",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:18.402Z"
+  },
+  {
+    "id": 1780331478401,
+    "alert_key": "1780331478400-0.9927127160891019",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1153 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:18.401Z"
+  },
+  {
+    "id": 1780331478399,
+    "alert_key": "1780331478399-0.6455008381877909",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:18.399Z"
+  },
+  {
+    "id": 1780331475375,
+    "alert_key": "1780331475375-0.5621869607648684",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1153 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:15.375Z"
+  },
+  {
+    "id": 1780331475373,
+    "alert_key": "1780331475372-0.328427046891981",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:15.373Z"
+  },
+  {
+    "id": 1780331475371,
+    "alert_key": "1780331475370-0.8228219870541942",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:15.371Z"
+  },
+  {
+    "id": 1780331472348,
+    "alert_key": "1780331472347-0.2752242744351746",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1088 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:12.348Z"
+  },
+  {
+    "id": 1780331472347,
+    "alert_key": "1780331472346-0.5575085190729596",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:12.347Z"
+  },
+  {
+    "id": 1780331472345,
+    "alert_key": "1780331472344-0.26630087721605944",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:12.345Z"
+  },
+  {
+    "id": 1780331469327,
+    "alert_key": "1780331469326-0.6513772142774966",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1092 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.327Z"
+  },
+  {
+    "id": 1780331469326,
+    "alert_key": "1780331469325-0.28774382107947893",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.326Z"
+  },
+  {
+    "id": 1780331469325,
+    "alert_key": "1780331469324-0.5389120994787917",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.325Z"
+  },
+  {
+    "id": 1780331469316,
+    "alert_key": "1780331469315-0.5443230366444829",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.316Z"
+  },
+  {
+    "id": 1780331469314,
+    "alert_key": "1780331469313-0.35927583134472185",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1039 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.314Z"
+  },
+  {
+    "id": 1780331469313,
+    "alert_key": "1780331469312-0.2687563406231781",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.313Z"
+  },
+  {
+    "id": 1780331469311,
+    "alert_key": "1780331469309-0.015069968041888315",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:09.311Z"
+  },
+  {
+    "id": 1780331466289,
+    "alert_key": "1780331466289-0.8197959172007393",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:06.289Z"
+  },
+  {
+    "id": 1780331466288,
+    "alert_key": "1780331466287-0.8748722356808396",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1055 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:06.288Z"
+  },
+  {
+    "id": 1780331466287,
+    "alert_key": "1780331466285-0.5968536437396489",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:06.287Z"
+  },
+  {
+    "id": 1780331466285,
+    "alert_key": "1780331466284-0.48062210114436954",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:06.285Z"
+  },
+  {
+    "id": 1780331463256,
+    "alert_key": "1780331463256-0.6403673771641218",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1154 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:03.256Z"
+  },
+  {
+    "id": 1780331463255,
+    "alert_key": "1780331463254-0.7498503834257105",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:03.255Z"
+  },
+  {
+    "id": 1780331463253,
+    "alert_key": "1780331463252-0.9812794814926501",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:03.253Z"
+  },
+  {
+    "id": 1780331460224,
+    "alert_key": "1780331460223-0.6566366881909363",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1118 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:00.224Z"
+  },
+  {
+    "id": 1780331460223,
+    "alert_key": "1780331460222-0.7332139924089973",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:31:00.223Z"
+  },
+  {
+    "id": 1780331457195,
+    "alert_key": "1780331457194-0.8329415573232152",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:57.195Z"
+  },
+  {
+    "id": 1780331457193,
+    "alert_key": "1780331457193-0.6783235818272493",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1146 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:57.193Z"
+  },
+  {
+    "id": 1780331457191,
+    "alert_key": "1780331457191-0.3067946631872044",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:57.191Z"
+  },
+  {
+    "id": 1780331457190,
+    "alert_key": "1780331457189-0.2623652938910862",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:57.190Z"
+  },
+  {
+    "id": 1780331454160,
+    "alert_key": "1780331454160-0.15570908693476482",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:54.160Z"
+  },
+  {
+    "id": 1780331454159,
+    "alert_key": "1780331454158-0.9945326792708014",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1069 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:54.159Z"
+  },
+  {
+    "id": 1780331454157,
+    "alert_key": "1780331454156-0.6535113766752285",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:54.157Z"
+  },
+  {
+    "id": 1780331432954,
+    "alert_key": "1780331432953-0.5779966095847309",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:32.954Z"
+  },
+  {
+    "id": 1780331426889,
+    "alert_key": "1780331426888-0.9669500703211016",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:26.889Z"
+  },
+  {
+    "id": 1780331426887,
+    "alert_key": "1780331426886-0.6243196703991958",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1054 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:26.887Z"
+  },
+  {
+    "id": 1780331426885,
+    "alert_key": "1780331426884-0.4381635031581924",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:26.885Z"
+  },
+  {
+    "id": 1780331426883,
+    "alert_key": "1780331426881-0.08091313100970066",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:26.883Z"
+  },
+  {
+    "id": 1780331423857,
+    "alert_key": "1780331423856-0.7292963557470405",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1278 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:23.857Z"
+  },
+  {
+    "id": 1780331423855,
+    "alert_key": "1780331423854-0.15535992981753344",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:23.855Z"
+  },
+  {
+    "id": 1780331420840,
+    "alert_key": "1780331420839-0.6404652117259115",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:20.840Z"
+  },
+  {
+    "id": 1780331420831,
+    "alert_key": "1780331420830-0.03476060758820887",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:20.831Z"
+  },
+  {
+    "id": 1780331420829,
+    "alert_key": "1780331420828-0.196668415836862",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1175 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:20.829Z"
+  },
+  {
+    "id": 1780331420827,
+    "alert_key": "1780331420826-0.1518116979976768",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:20.827Z"
+  },
+  {
+    "id": 1780331420825,
+    "alert_key": "1780331420824-0.17022027650713456",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:20.825Z"
+  },
+  {
+    "id": 1780331417798,
+    "alert_key": "1780331417797-0.8682973100089436",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:17.798Z"
+  },
+  {
+    "id": 1780331417796,
+    "alert_key": "1780331417796-0.8496149551078014",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1286 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:17.796Z"
+  },
+  {
+    "id": 1780331417794,
+    "alert_key": "1780331417793-0.7697802901669883",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:17.794Z"
+  },
+  {
+    "id": 1780331417792,
+    "alert_key": "1780331417791-0.8266706762120061",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:17.792Z"
+  },
+  {
+    "id": 1780331414764,
+    "alert_key": "1780331414763-0.059070449051994656",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1002 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:14.764Z"
+  },
+  {
+    "id": 1780331414762,
+    "alert_key": "1780331414761-0.8898581221308517",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:14.762Z"
+  },
+  {
+    "id": 1780331414760,
+    "alert_key": "1780331414759-0.23330136289849446",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:14.760Z"
+  },
+  {
+    "id": 1780331411731,
+    "alert_key": "1780331411730-0.18025116559221088",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:11.731Z"
+  },
+  {
+    "id": 1780331411730,
+    "alert_key": "1780331411729-0.7206483948240267",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1088 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:11.730Z"
+  },
+  {
+    "id": 1780331411728,
+    "alert_key": "1780331411727-0.7851071956854359",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:11.728Z"
+  },
+  {
+    "id": 1780331411726,
+    "alert_key": "1780331411725-0.5755480165361644",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:11.726Z"
+  },
+  {
+    "id": 1780331408698,
+    "alert_key": "1780331408698-0.8555097078985544",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:08.698Z"
+  },
+  {
+    "id": 1780331408697,
+    "alert_key": "1780331408696-0.9783299162604973",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1178 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:08.697Z"
+  },
+  {
+    "id": 1780331408695,
+    "alert_key": "1780331408694-0.7074512350779504",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 96.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:08.695Z"
+  },
+  {
+    "id": 1780331408693,
+    "alert_key": "1780331408692-0.40205379810602293",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:08.693Z"
+  },
+  {
+    "id": 1780331405665,
+    "alert_key": "1780331405663-0.7690649739026431",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:05.665Z"
+  },
+  {
+    "id": 1780331405662,
+    "alert_key": "1780331405661-0.08986558265876743",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:05.662Z"
+  },
+  {
+    "id": 1780331402634,
+    "alert_key": "1780331402634-0.26691717381776947",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1198 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:02.634Z"
+  },
+  {
+    "id": 1780331402633,
+    "alert_key": "1780331402631-0.4612245188037323",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.7%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:02.633Z"
+  },
+  {
+    "id": 1780331402630,
+    "alert_key": "1780331402629-0.7202582485594353",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:30:02.630Z"
+  },
+  {
+    "id": 1780331399611,
+    "alert_key": "1780331399611-0.49317123752617686",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1324 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.611Z"
+  },
+  {
+    "id": 1780331399610,
+    "alert_key": "1780331399609-0.864206764239622",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.610Z"
+  },
+  {
+    "id": 1780331399601,
+    "alert_key": "1780331399601-0.5751440447216369",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.601Z"
+  },
+  {
+    "id": 1780331399600,
+    "alert_key": "1780331399599-0.5339675431009587",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1101 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.600Z"
+  },
+  {
+    "id": 1780331399598,
+    "alert_key": "1780331399597-0.9561502136387303",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.598Z"
+  },
+  {
+    "id": 1780331399596,
+    "alert_key": "1780331399594-0.10612606415169601",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:59.596Z"
+  },
+  {
+    "id": 1780331396575,
+    "alert_key": "1780331396574-0.7314322256758315",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1195 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:56.575Z"
+  },
+  {
+    "id": 1780331396573,
+    "alert_key": "1780331396573-0.32593068503225575",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:56.573Z"
+  },
+  {
+    "id": 1780331396564,
+    "alert_key": "1780331396563-0.8126988204408973",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1194 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:56.564Z"
+  },
+  {
+    "id": 1780331396563,
+    "alert_key": "1780331396562-0.26174191985635853",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:56.563Z"
+  },
+  {
+    "id": 1780331396561,
+    "alert_key": "1780331396560-0.25259109169937743",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:56.561Z"
+  },
+  {
+    "id": 1780331393541,
+    "alert_key": "1780331393539-0.5001402570959377",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1073 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:53.541Z"
+  },
+  {
+    "id": 1780331393539,
+    "alert_key": "1780331393538-0.9868737427997561",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:53.539Z"
+  },
+  {
+    "id": 1780331393537,
+    "alert_key": "1780331393537-0.9510970989828171",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:53.537Z"
+  },
+  {
+    "id": 1780331393528,
+    "alert_key": "1780331393527-0.9632154651307426",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1042 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:53.528Z"
+  },
+  {
+    "id": 1780331393526,
+    "alert_key": "1780331393524-0.7435248328885101",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:53.526Z"
+  },
+  {
+    "id": 1780331390505,
+    "alert_key": "1780331390505-0.7348114193570987",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1338 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.505Z"
+  },
+  {
+    "id": 1780331390504,
+    "alert_key": "1780331390504-0.3702661986623085",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.504Z"
+  },
+  {
+    "id": 1780331390502,
+    "alert_key": "1780331390501-0.0692695410846561",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.502Z"
+  },
+  {
+    "id": 1780331390493,
+    "alert_key": "1780331390492-0.6893752300078616",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1285 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.493Z"
+  },
+  {
+    "id": 1780331390491,
+    "alert_key": "1780331390491-0.6524951494145947",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.491Z"
+  },
+  {
+    "id": 1780331390490,
+    "alert_key": "1780331390489-0.5261866535190389",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.8°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:50.490Z"
+  },
+  {
+    "id": 1780331387471,
+    "alert_key": "1780331387470-0.15029835093193755",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.471Z"
+  },
+  {
+    "id": 1780331387469,
+    "alert_key": "1780331387468-0.19908990282379757",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1181 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.469Z"
+  },
+  {
+    "id": 1780331387468,
+    "alert_key": "1780331387467-0.900337900988176",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.468Z"
+  },
+  {
+    "id": 1780331387458,
+    "alert_key": "1780331387458-0.9463010133528432",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1125 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.458Z"
+  },
+  {
+    "id": 1780331387457,
+    "alert_key": "1780331387456-0.6727234775478199",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.9%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.457Z"
+  },
+  {
+    "id": 1780331387455,
+    "alert_key": "1780331387454-0.1180094713102875",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:47.455Z"
+  },
+  {
+    "id": 1780331384436,
+    "alert_key": "1780331384436-0.2252583906075224",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.436Z"
+  },
+  {
+    "id": 1780331384435,
+    "alert_key": "1780331384435-0.08761496184011452",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1181 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.435Z"
+  },
+  {
+    "id": 1780331384434,
+    "alert_key": "1780331384433-0.47511067623638614",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 97.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.434Z"
+  },
+  {
+    "id": 1780331384433,
+    "alert_key": "1780331384432-0.9924675945551398",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.433Z"
+  },
+  {
+    "id": 1780331384424,
+    "alert_key": "1780331384423-0.748162737631187",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.424Z"
+  },
+  {
+    "id": 1780331384422,
+    "alert_key": "1780331384422-0.8591288675581564",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1224 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.422Z"
+  },
+  {
+    "id": 1780331384420,
+    "alert_key": "1780331384419-0.5369183847022515",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 96.8%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.420Z"
+  },
+  {
+    "id": 1780331384418,
+    "alert_key": "1780331384417-0.09387121135017629",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:44.418Z"
+  },
+  {
+    "id": 1780331381401,
+    "alert_key": "1780331381401-0.28908976999701563",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.401Z"
+  },
+  {
+    "id": 1780331381400,
+    "alert_key": "1780331381399-0.5991538941692813",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1050 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.400Z"
+  },
+  {
+    "id": 1780331381399,
+    "alert_key": "1780331381398-0.0731933990299305",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.399Z"
+  },
+  {
+    "id": 1780331381398,
+    "alert_key": "1780331381397-0.6777881408556757",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.398Z"
+  },
+  {
+    "id": 1780331381392,
+    "alert_key": "1780331381391-0.01834025780921089",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.392Z"
+  },
+  {
+    "id": 1780331381390,
+    "alert_key": "1780331381389-0.6737307941827423",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1114 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.390Z"
+  },
+  {
+    "id": 1780331381389,
+    "alert_key": "1780331381388-0.5760290241847348",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 97.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.389Z"
+  },
+  {
+    "id": 1780331381387,
+    "alert_key": "1780331381386-0.7212904714573346",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:41.387Z"
+  },
+  {
+    "id": 1780331378371,
+    "alert_key": "1780331378370-0.5230260959360309",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1297 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:38.371Z"
+  },
+  {
+    "id": 1780331378370,
+    "alert_key": "1780331378369-0.22525825559772894",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 98.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:38.370Z"
+  },
+  {
+    "id": 1780331378368,
+    "alert_key": "1780331378368-0.3444866360708967",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:38.368Z"
+  },
+  {
+    "id": 1780331375348,
+    "alert_key": "1780331375348-0.33550791568454197",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1272 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:35.348Z"
+  },
+  {
+    "id": 1780331375347,
+    "alert_key": "1780331375346-0.32899758210419205",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:35.347Z"
+  },
+  {
+    "id": 1780331375345,
+    "alert_key": "1780331375344-0.38842640015201824",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:35.345Z"
+  },
+  {
+    "id": 1780331369293,
+    "alert_key": "1780331369292-0.5336063384541389",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:29.293Z"
+  },
+  {
+    "id": 1780331363232,
+    "alert_key": "1780331363231-0.14530915040868675",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:23.232Z"
+  },
+  {
+    "id": 1780331363231,
+    "alert_key": "1780331363231-0.7964519401600866",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1138 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:23.231Z"
+  },
+  {
+    "id": 1780331363230,
+    "alert_key": "1780331363230-0.4325963586928576",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 99.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:23.230Z"
+  },
+  {
+    "id": 1780331363230,
+    "alert_key": "1780331363229-0.7214954637646589",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:23.230Z"
+  },
+  {
+    "id": 1780331360212,
+    "alert_key": "1780331360211-0.5643228675586809",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:20.212Z"
+  },
+  {
+    "id": 1780331360210,
+    "alert_key": "1780331360210-0.7121424697219121",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1290 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:20.210Z"
+  },
+  {
+    "id": 1780331360209,
+    "alert_key": "1780331360208-0.4550739942847565",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 97.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:20.209Z"
+  },
+  {
+    "id": 1780331360208,
+    "alert_key": "1780331360207-0.7772096247250891",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:20.208Z"
+  },
+  {
+    "id": 1780331357180,
+    "alert_key": "1780331357179-0.9212016068822237",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1238 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:17.180Z"
+  },
+  {
+    "id": 1780331357178,
+    "alert_key": "1780331357177-0.8010051745902884",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 97.5%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:17.178Z"
+  },
+  {
+    "id": 1780331357177,
+    "alert_key": "1780331357176-0.053091679929367475",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 10.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:17.177Z"
+  },
+  {
+    "id": 1780331354149,
+    "alert_key": "1780331354148-0.6679224831904569",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:14.149Z"
+  },
+  {
+    "id": 1780331354147,
+    "alert_key": "1780331354146-0.9261168629064334",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1241 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:14.147Z"
+  },
+  {
+    "id": 1780331354146,
+    "alert_key": "1780331354144-0.6450402703718784",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:14.146Z"
+  },
+  {
+    "id": 1780331354144,
+    "alert_key": "1780331354143-0.10568985156773514",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:14.144Z"
+  },
+  {
+    "id": 1780331351115,
+    "alert_key": "1780331351114-0.2764260594649759",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:11.115Z"
+  },
+  {
+    "id": 1780331351113,
+    "alert_key": "1780331351112-0.8820442639929271",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1065 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:11.113Z"
+  },
+  {
+    "id": 1780331351111,
+    "alert_key": "1780331351111-0.4906496864339299",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:11.111Z"
+  },
+  {
+    "id": 1780331351110,
+    "alert_key": "1780331351109-0.054352086632193486",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 8.1°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:11.110Z"
+  },
+  {
+    "id": 1780331348088,
+    "alert_key": "1780331348087-0.5740068236037579",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1134 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:08.088Z"
+  },
+  {
+    "id": 1780331348086,
+    "alert_key": "1780331348086-0.7748840249129935",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 8.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:08.086Z"
+  },
+  {
+    "id": 1780331348079,
+    "alert_key": "1780331348078-0.4342504084120138",
+    "room_id": "Room-B",
+    "message": "HIGH CO2 in Room-B: 1253 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:08.079Z"
+  },
+  {
+    "id": 1780331348077,
+    "alert_key": "1780331348076-0.991902778824911",
+    "room_id": "Room-B",
+    "message": "HIGH HUMIDITY in Room-B: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:08.077Z"
+  },
+  {
+    "id": 1780331348076,
+    "alert_key": "1780331348075-0.8826589450964886",
+    "room_id": "Room-B",
+    "message": "HIGH TEMP in Room-B: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:08.076Z"
+  },
+  {
+    "id": 1780331345053,
+    "alert_key": "1780331345052-0.2005934075343141",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:05.053Z"
+  },
+  {
+    "id": 1780331345051,
+    "alert_key": "1780331345050-0.9774046841192604",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 96.6%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:05.051Z"
+  },
+  {
+    "id": 1780331342022,
+    "alert_key": "1780331342022-0.7499788809135314",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:02.022Z"
+  },
+  {
+    "id": 1780331342021,
+    "alert_key": "1780331342020-0.5208489978561868",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1180 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:29:02.021Z"
+  },
+  {
+    "id": 1780331338986,
+    "alert_key": "1780331338985-0.9285218607813069",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:58.986Z"
+  },
+  {
+    "id": 1780331335956,
+    "alert_key": "1780331335955-0.47309307910132137",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:55.956Z"
+  },
+  {
+    "id": 1780331335955,
+    "alert_key": "1780331335954-0.4862304377748746",
+    "room_id": "Room-C",
+    "message": "HIGH TEMP in Room-C: 9.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:55.955Z"
+  },
+  {
+    "id": 1780331332918,
+    "alert_key": "1780331332918-0.3994000294386951",
+    "room_id": "Room-C",
+    "message": "DOOR OPEN in Room-C",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:52.918Z"
+  },
+  {
+    "id": 1780331332917,
+    "alert_key": "1780331332917-0.5627287597395088",
+    "room_id": "Room-C",
+    "message": "HIGH CO2 in Room-C: 1114 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:52.917Z"
+  },
+  {
+    "id": 1780331332916,
+    "alert_key": "1780331332915-0.7423558387177704",
+    "room_id": "Room-C",
+    "message": "HIGH HUMIDITY in Room-C: 98.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:52.916Z"
+  },
+  {
+    "id": 1780331323814,
+    "alert_key": "1780331323813-0.8429111369269146",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:43.814Z"
+  },
+  {
+    "id": 1780331323812,
+    "alert_key": "1780331323811-0.2867209272322283",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 12.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:43.812Z"
+  },
+  {
+    "id": 1780331320784,
+    "alert_key": "1780331320783-0.5231233469505898",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:40.784Z"
+  },
+  {
+    "id": 1780331320782,
+    "alert_key": "1780331320782-0.7276722732964912",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1013 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:40.782Z"
+  },
+  {
+    "id": 1780331320781,
+    "alert_key": "1780331320780-0.5579440115294344",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:40.781Z"
+  },
+  {
+    "id": 1780331320779,
+    "alert_key": "1780331320778-0.25238616083461496",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:40.779Z"
+  },
+  {
+    "id": 1780331317758,
+    "alert_key": "1780331317757-0.3400161894024786",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:37.758Z"
+  },
+  {
+    "id": 1780331317749,
+    "alert_key": "1780331317748-0.526503997501497",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1078 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:37.749Z"
+  },
+  {
+    "id": 1780331317746,
+    "alert_key": "1780331317745-0.34008579378313697",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:37.746Z"
+  },
+  {
+    "id": 1780331317744,
+    "alert_key": "1780331317743-0.45694749850607064",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:37.744Z"
+  },
+  {
+    "id": 1780331314716,
+    "alert_key": "1780331314715-0.2925681833676097",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:34.716Z"
+  },
+  {
+    "id": 1780331314714,
+    "alert_key": "1780331314714-0.3089364733089305",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1011 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:34.714Z"
+  },
+  {
+    "id": 1780331314713,
+    "alert_key": "1780331314711-0.7823405048428165",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 98.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:34.713Z"
+  },
+  {
+    "id": 1780331314710,
+    "alert_key": "1780331314709-0.49955713847831995",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:34.710Z"
+  },
+  {
+    "id": 1780331311682,
+    "alert_key": "1780331311682-0.4021744953215568",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:31.682Z"
+  },
+  {
+    "id": 1780331311681,
+    "alert_key": "1780331311680-0.1056152013574383",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1003 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:31.681Z"
+  },
+  {
+    "id": 1780331311679,
+    "alert_key": "1780331311678-0.3033012002465624",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.1%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:31.679Z"
+  },
+  {
+    "id": 1780331311677,
+    "alert_key": "1780331311676-0.8253445498022944",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.7°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:31.677Z"
+  },
+  {
+    "id": 1780331308648,
+    "alert_key": "1780331308647-0.25437039070475276",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:28.648Z"
+  },
+  {
+    "id": 1780331308646,
+    "alert_key": "1780331308645-0.46480006288853215",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 12.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:28.646Z"
+  },
+  {
+    "id": 1780331305619,
+    "alert_key": "1780331305617-0.2868910010417919",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1049 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:25.619Z"
+  },
+  {
+    "id": 1780331305616,
+    "alert_key": "1780331305615-0.7232753037723253",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:25.616Z"
+  },
+  {
+    "id": 1780331296529,
+    "alert_key": "1780331296528-0.8326382659343754",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1093 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:16.529Z"
+  },
+  {
+    "id": 1780331296527,
+    "alert_key": "1780331296526-0.577469546095028",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:16.527Z"
+  },
+  {
+    "id": 1780331296525,
+    "alert_key": "1780331296524-0.2586918016914077",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 8.5°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:16.525Z"
+  },
+  {
+    "id": 1780331293500,
+    "alert_key": "1780331293499-0.46328262966066946",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:13.500Z"
+  },
+  {
+    "id": 1780331293499,
+    "alert_key": "1780331293498-0.16652284947196616",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1060 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:13.499Z"
+  },
+  {
+    "id": 1780331293497,
+    "alert_key": "1780331293496-0.014188756023793547",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:13.497Z"
+  },
+  {
+    "id": 1780331293496,
+    "alert_key": "1780331293495-0.7549273710241444",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:13.496Z"
+  },
+  {
+    "id": 1780331290468,
+    "alert_key": "1780331290466-0.16956581755762257",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1275 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:10.468Z"
+  },
+  {
+    "id": 1780331290466,
+    "alert_key": "1780331290465-0.13516150820264827",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:10.466Z"
+  },
+  {
+    "id": 1780331290464,
+    "alert_key": "1780331290463-0.14660081859974028",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.6°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:10.464Z"
+  },
+  {
+    "id": 1780331287445,
+    "alert_key": "1780331287444-0.9361946353238193",
+    "room_id": "Room-B",
+    "message": "DOOR OPEN in Room-B",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:07.445Z"
+  },
+  {
+    "id": 1780331287435,
+    "alert_key": "1780331287435-0.02570081559813231",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:07.435Z"
+  },
+  {
+    "id": 1780331287434,
+    "alert_key": "1780331287432-0.15445242139266968",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1273 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:07.434Z"
+  },
+  {
+    "id": 1780331287431,
+    "alert_key": "1780331287430-0.1880313632907793",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.0°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:07.431Z"
+  },
+  {
+    "id": 1780331284403,
+    "alert_key": "1780331284402-0.7773005422639144",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.3%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:04.403Z"
+  },
+  {
+    "id": 1780331284401,
+    "alert_key": "1780331284400-0.5747942654978879",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.4°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:04.401Z"
+  },
+  {
+    "id": 1780331281373,
+    "alert_key": "1780331281372-0.8508200665838801",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:01.373Z"
+  },
+  {
+    "id": 1780331281371,
+    "alert_key": "1780331281370-0.5506014523052593",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1171 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:01.371Z"
+  },
+  {
+    "id": 1780331281369,
+    "alert_key": "1780331281368-0.3177805980656423",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 11.3°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:28:01.369Z"
+  },
+  {
+    "id": 1780331275315,
+    "alert_key": "1780331275314-0.3859520569976671",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:55.315Z"
+  },
+  {
+    "id": 1780331275314,
+    "alert_key": "1780331275313-0.9312888656992497",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1244 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:55.314Z"
+  },
+  {
+    "id": 1780331275312,
+    "alert_key": "1780331275311-0.06234381089514107",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 99.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:55.312Z"
+  },
+  {
+    "id": 1780331275309,
+    "alert_key": "1780331275308-0.8563543141136449",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:55.309Z"
+  },
+  {
+    "id": 1780331272282,
+    "alert_key": "1780331272281-0.12005815581106505",
+    "room_id": "Room-A",
+    "message": "HIGH CO2 in Room-A: 1237 ppm",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:52.282Z"
+  },
+  {
+    "id": 1780331272280,
+    "alert_key": "1780331272279-0.39041295341319293",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 100.0%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:52.280Z"
+  },
+  {
+    "id": 1780331272278,
+    "alert_key": "1780331272277-0.6998232870551273",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 9.2°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:52.278Z"
+  },
+  {
+    "id": 1780331269252,
+    "alert_key": "1780331269251-0.9129905154156928",
+    "room_id": "Room-A",
+    "message": "DOOR OPEN in Room-A",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:49.252Z"
+  },
+  {
+    "id": 1780331269250,
+    "alert_key": "1780331269249-0.39035988893892637",
+    "room_id": "Room-A",
+    "message": "HIGH HUMIDITY in Room-A: 95.2%",
+    "severity": "warning",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:49.250Z"
+  },
+  {
+    "id": 1780331269248,
+    "alert_key": "1780331269247-0.0037430721451326976",
+    "room_id": "Room-A",
+    "message": "HIGH TEMP in Room-A: 10.9°C",
+    "severity": "critical",
+    "resolved": 0,
+    "created_at": "2026-06-01T16:27:49.248Z"
+  }
+]
