@@ -1,4 +1,4 @@
-export const API = 'http://localhost:5000';
+export const API = 'https://coldchain-guard-backend.onrender.com';
 
 export const CROPS = {
   apple:       { label: 'Apple',       emoji: '🍎', temp: [0, 4],   humidity: [85, 92], co2: 3000, desc: 'Requires cold, dry conditions' },
