@@ -8,7 +8,7 @@ import random
 import time
 import math
 
-BASE_URL = "http://localhost:5000"
+BASE_URL = "https://coldchain-guard-backend.onrender.com"
 
 # Room configurations — each has different base values
 ROOMS = {
