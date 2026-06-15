@@ -138,8 +138,63 @@ io.on('connection', socket => {
   socket.on('disconnect', () => console.log('Browser disconnected:', socket.id));
 });
 
-const PORT = 5000;
+// ─── Built-in Simulator ───────────────────────────────────────────────────────
+const SIM_ROOMS = {
+  'Room-A': { base_temp: 4.0, base_humidity: 88.0, base_co2: 600 },
+  'Room-B': { base_temp: 3.0, base_humidity: 92.0, base_co2: 700 },
+  'Room-C': { base_temp: 2.0, base_humidity: 85.0, base_co2: 500 },
+};
+const anomalySteps = { 'Room-A': 0, 'Room-B': 0, 'Room-C': 0 };
+let simStep = 0;
+
+function gauss(std) {
+  let u = 0, v = 0;
+  while (u === 0) u = Math.random();
+  while (v === 0) v = Math.random();
+  return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v) * std;
+}
+
+function runSimulator() {
+  const naturalVar = Math.sin(simStep * 0.08) * 0.4;
+  Object.entries(SIM_ROOMS).forEach(([roomId, cfg]) => {
+    let isAnomaly = false;
+    if (anomalySteps[roomId] > 0) { anomalySteps[roomId]--; isAnomaly = true; }
+    else if (Math.random() < 0.05) { anomalySteps[roomId] = Math.floor(Math.random() * 6) + 3; isAnomaly = true; }
+
+    let temperature, humidity, co2, doorOpen;
+    if (isAnomaly) {
+      temperature = cfg.base_temp + 4 + Math.random() * 4;
+      humidity    = cfg.base_humidity + 5 + Math.random() * 10;
+      co2         = cfg.base_co2 + 350 + Math.random() * 350;
+      doorOpen    = Math.random() < 0.45;
+    } else {
+      temperature = cfg.base_temp + naturalVar + gauss(0.15);
+      humidity    = cfg.base_humidity + gauss(0.8);
+      co2         = cfg.base_co2 + gauss(18);
+      doorOpen    = Math.random() < 0.02;
+    }
+
+    temperature = parseFloat(temperature.toFixed(2));
+    humidity    = parseFloat(Math.min(100, Math.max(0, humidity)).toFixed(2));
+    co2         = parseFloat(Math.max(300, co2).toFixed(1));
+
+    const spoilageRisk = calcRisk(temperature, humidity, co2);
+    const point = { timestamp: new Date().toISOString(), temperature, humidity, co2, doorOpen, spoilageRisk };
+
+    sensorHistory[roomId].unshift(point);
+    if (sensorHistory[roomId].length > MAX_HIST) sensorHistory[roomId].pop();
+
+    checkAlerts(roomId, { temperature, humidity, co2, doorOpen });
+    io.emit('sensorUpdate', { roomId, data: point });
+    db.insertReading(roomId, temperature, humidity, co2, doorOpen ? 1 : 0, spoilageRisk);
+  });
+  simStep++;
+}
+
+const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
   console.log(`\n🧊 ColdChain Guard Backend v2 running at http://localhost:${PORT}`);
-  console.log('Storage: JSON files in ./data/\n');
+  console.log('Storage: JSON files in ./data/');
+  console.log('Built-in simulator: active (3s interval)\n');
+  setInterval(runSimulator, 3000);
 });
