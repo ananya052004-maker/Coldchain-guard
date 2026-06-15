@@ -8,7 +8,8 @@ import Layout from './Layout';
 import LoginPage    from './pages/LoginPage';
 import CropPage     from './pages/CropPage';
 import LiveAlertsPage from './pages/LiveAlertsPage';
-import RoomPage     from './pages/RoomPage';
+import RoomPage       from './pages/RoomPage';
+import AnalyticsPage  from './pages/AnalyticsPage';
 
 // ─── Route guard ─────────────────────────────────────────────────────────────
 function Protected({ children }) {
@@ -333,7 +334,7 @@ export default function App() {
       <Route path="/"            element={<LoginPage />} />
       <Route path="/setup"       element={<Protected><CropPage /></Protected>} />
       <Route path="/dashboard"   element={<Protected><DashboardPage /></Protected>} />
-      <Route path="/analytics"   element={<Protected><DashboardPage /></Protected>} />
+      <Route path="/analytics"   element={<Protected><AnalyticsPage /></Protected>} />
       <Route path="/live-alerts" element={<Protected><LiveAlertsPage /></Protected>} />
       <Route path="/room/:roomId"element={<Protected><RoomPage /></Protected>} />
       <Route path="*"            element={<Navigate to="/" replace />} />
