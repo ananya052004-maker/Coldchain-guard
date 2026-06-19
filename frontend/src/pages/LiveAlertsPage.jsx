@@ -1,24 +1,26 @@
 import { useState, useEffect } from 'react';
-import { API, authHeaders, risk_color, fmtDate } from '../shared';
+import { API, authHeaders, fmtDate } from '../shared';
 import Layout from '../Layout';
 
 export default function LiveAlertsPage() {
   const [alerts,   setAlerts]   = useState([]);
-  const [filter,   setFilter]   = useState('all');   // all | critical | warning
+  const [rooms,    setRooms]    = useState([]);
+  const [filter,   setFilter]   = useState('all');
   const [room,     setRoom]     = useState('all');
   const [loading,  setLoading]  = useState(true);
 
   useEffect(() => {
-    fetch(`${API}/api/db/alerts`)
+    fetch(`${API}/api/rooms`, { headers: authHeaders() })
+      .then(r => r.json()).then(d => setRooms(d.rooms || [])).catch(() => {});
+
+    fetch(`${API}/api/db/alerts`, { headers: authHeaders() })
       .then(r => r.json())
       .then(data => { setAlerts(data); setLoading(false); })
       .catch(() => setLoading(false));
 
     const interval = setInterval(() => {
-      fetch(`${API}/api/db/alerts`)
-        .then(r => r.json())
-        .then(setAlerts)
-        .catch(() => {});
+      fetch(`${API}/api/db/alerts`, { headers: authHeaders() })
+        .then(r => r.json()).then(setAlerts).catch(() => {});
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -88,13 +90,15 @@ export default function LiveAlertsPage() {
             }}>{f}</button>
           ))}
           <span style={{ fontSize: 13, color: '#666', marginLeft: 8 }}>Room:</span>
-          {['all', 'Room-A', 'Room-B', 'Room-C'].map(r => (
+          {['all', ...rooms.map(r => r.room_key)].map(r => (
             <button key={r} onClick={() => setRoom(r)} style={{
               padding: '6px 16px', borderRadius: 6, cursor: 'pointer', fontSize: 13,
               background: room === r ? '#1a1a1a' : 'transparent',
               color: room === r ? '#fff' : '#666',
               border: room === r ? '1px solid #333' : '1px solid #1e1e1e',
-            }}>{r}</button>
+            }}>
+              {r === 'all' ? 'all' : (rooms.find(x => x.room_key === r)?.name || r)}
+            </button>
           ))}
         </div>
 

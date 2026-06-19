@@ -8,7 +8,7 @@ const db       = require('./db');
 
 const app    = express();
 const server = http.createServer(app);
-const io     = socketIo(server, { cors: { origin: '*', methods: ['GET', 'POST', 'PUT'] } });
+const io     = socketIo(server, { cors: { origin: '*', methods: ['GET', 'POST', 'PUT', 'DELETE'] } });
 
 app.use(cors());
 app.use(express.json());
@@ -23,54 +23,69 @@ function auth(req, res, next) {
   catch { res.status(401).json({ error: 'Invalid token' }); }
 }
 
-// ─── In-memory real-time state ────────────────────────────────────────────────
-const sensorHistory = { 'Room-A': [], 'Room-B': [], 'Room-C': [] };
-const liveAlerts    = [];
-const MAX_HIST      = 50;
-
-const THRESHOLDS = {
-  temperature: { min: 1, max: 8 },
-  humidity:    { min: 80, max: 95 },
-  co2:         { max: 1000 },
+// ─── Category configs ─────────────────────────────────────────────────────────
+const CATEGORY_BASES = {
+  fruits:     { base_temp: 4,  base_humidity: 88, base_co2: 600 },
+  vegetables: { base_temp: 3,  base_humidity: 92, base_co2: 700 },
+  dairy:      { base_temp: 2,  base_humidity: 85, base_co2: 500 },
+  medicines:  { base_temp: 5,  base_humidity: 50, base_co2: 400 },
+  vaccines:   { base_temp: 3,  base_humidity: 45, base_co2: 400 },
+  grains:     { base_temp: 15, base_humidity: 60, base_co2: 600 },
+  meat:       { base_temp: 1,  base_humidity: 90, base_co2: 500 },
 };
 
-function calcRisk(temp, hum, co2) {
+const CATEGORY_THRESHOLDS = {
+  fruits:     { temperature: { min: 1,  max: 8  }, humidity: { min: 80, max: 95 }, co2: { max: 1000 } },
+  vegetables: { temperature: { min: 0,  max: 8  }, humidity: { min: 85, max: 98 }, co2: { max: 1000 } },
+  dairy:      { temperature: { min: 2,  max: 4  }, humidity: { min: 80, max: 90 }, co2: { max: 1000 } },
+  medicines:  { temperature: { min: 2,  max: 8  }, humidity: { min: 35, max: 60 }, co2: { max: 600  } },
+  vaccines:   { temperature: { min: 2,  max: 8  }, humidity: { min: 35, max: 55 }, co2: { max: 600  } },
+  grains:     { temperature: { min: 10, max: 20 }, humidity: { min: 50, max: 70 }, co2: { max: 800  } },
+  meat:       { temperature: { min: 0,  max: 4  }, humidity: { min: 85, max: 95 }, co2: { max: 1000 } },
+};
+
+// ─── In-memory state ──────────────────────────────────────────────────────────
+const sensorHistory = {};
+const liveAlerts    = [];
+const anomalySteps  = {};
+const MAX_HIST      = 50;
+
+function calcRisk(temp, hum, co2, category) {
+  const t = (CATEGORY_THRESHOLDS[category] || CATEGORY_THRESHOLDS.fruits);
   let r = 0;
-  if (temp > THRESHOLDS.temperature.max)      r += (temp - THRESHOLDS.temperature.max) * 10;
-  else if (temp < THRESHOLDS.temperature.min) r += (THRESHOLDS.temperature.min - temp) * 5;
-  if (hum > THRESHOLDS.humidity.max)          r += (hum - THRESHOLDS.humidity.max) * 2;
-  else if (hum < THRESHOLDS.humidity.min)     r += (THRESHOLDS.humidity.min - hum) * 1.5;
-  if (co2 > THRESHOLDS.co2.max)              r += (co2 - THRESHOLDS.co2.max) * 0.05;
+  if (temp > t.temperature.max)      r += (temp - t.temperature.max) * 10;
+  else if (temp < t.temperature.min) r += (t.temperature.min - temp) * 5;
+  if (hum > t.humidity.max)          r += (hum - t.humidity.max) * 2;
+  else if (hum < t.humidity.min)     r += (t.humidity.min - hum) * 1.5;
+  if (co2 > t.co2.max)               r += (co2 - t.co2.max) * 0.05;
   return Math.min(100, Math.max(0, r));
 }
 
-function checkAlerts(roomId, data) {
+function checkAlerts(roomKey, roomName, data, category) {
+  const t    = CATEGORY_THRESHOLDS[category] || CATEGORY_THRESHOLDS.fruits;
   const msgs = [];
-  if (data.temperature > THRESHOLDS.temperature.max) msgs.push({ msg: `HIGH TEMP in ${roomId}: ${data.temperature.toFixed(1)}°C`,  sev: 'critical' });
-  if (data.temperature < THRESHOLDS.temperature.min) msgs.push({ msg: `LOW TEMP in ${roomId}: ${data.temperature.toFixed(1)}°C`,   sev: 'critical' });
-  if (data.humidity    > THRESHOLDS.humidity.max)    msgs.push({ msg: `HIGH HUMIDITY in ${roomId}: ${data.humidity.toFixed(1)}%`,   sev: 'warning'  });
-  if (data.humidity    < THRESHOLDS.humidity.min)    msgs.push({ msg: `LOW HUMIDITY in ${roomId}: ${data.humidity.toFixed(1)}%`,    sev: 'warning'  });
-  if (data.co2         > THRESHOLDS.co2.max)         msgs.push({ msg: `HIGH CO2 in ${roomId}: ${data.co2.toFixed(0)} ppm`,         sev: 'warning'  });
-  if (data.doorOpen)                                  msgs.push({ msg: `DOOR OPEN in ${roomId}`,                                    sev: 'warning'  });
+  if (data.temperature > t.temperature.max) msgs.push({ msg: `HIGH TEMP in ${roomName}: ${data.temperature.toFixed(1)}°C`,  sev: 'critical' });
+  if (data.temperature < t.temperature.min) msgs.push({ msg: `LOW TEMP in ${roomName}: ${data.temperature.toFixed(1)}°C`,   sev: 'critical' });
+  if (data.humidity    > t.humidity.max)    msgs.push({ msg: `HIGH HUMIDITY in ${roomName}: ${data.humidity.toFixed(1)}%`,   sev: 'warning'  });
+  if (data.humidity    < t.humidity.min)    msgs.push({ msg: `LOW HUMIDITY in ${roomName}: ${data.humidity.toFixed(1)}%`,    sev: 'warning'  });
+  if (data.co2         > t.co2.max)         msgs.push({ msg: `HIGH CO2 in ${roomName}: ${data.co2.toFixed(0)} ppm`,         sev: 'warning'  });
+  if (data.doorOpen)                         msgs.push({ msg: `DOOR OPEN in ${roomName}`,                                   sev: 'warning'  });
 
   msgs.forEach(({ msg, sev }) => {
     const key   = `${Date.now()}-${Math.random()}`;
-    const alert = { id: key, message: msg, timestamp: new Date().toISOString(), room: roomId, severity: sev };
+    const alert = { id: key, message: msg, timestamp: new Date().toISOString(), room: roomKey, severity: sev };
     liveAlerts.unshift(alert);
-    if (liveAlerts.length > 100) liveAlerts.pop();
+    if (liveAlerts.length > 200) liveAlerts.pop();
     io.emit('alert', alert);
-    db.insertAlert(key, roomId, msg, sev);
+    db.insertAlert(key, roomKey, msg, sev);
   });
 }
 
 // ─── Auth routes ──────────────────────────────────────────────────────────────
 app.post('/api/auth/register', (req, res) => {
   const { name, email, password } = req.body;
-  if (!name || !email || !password)
-    return res.status(400).json({ error: 'Name, email and password required' });
-  if (db.findByEmail(email))
-    return res.status(409).json({ error: 'Email already registered' });
-
+  if (!name || !email || !password) return res.status(400).json({ error: 'Name, email and password required' });
+  if (db.findByEmail(email))        return res.status(409).json({ error: 'Email already registered' });
   const hash  = bcrypt.hashSync(password, 10);
   const user  = db.createUser(name, email, hash);
   const token = jwt.sign({ id: user.id, email: user.email }, JWT_SECRET, { expiresIn: '7d' });
@@ -92,61 +107,76 @@ app.get('/api/auth/me', auth, (req, res) => {
   res.json(db.safeUser(user));
 });
 
-app.put('/api/auth/crop', auth, (req, res) => {
-  const { crop, crop_emoji, quantity_kg } = req.body;
-  const updated = db.updateCrop(req.user.id, crop, crop_emoji, quantity_kg || 0);
-  res.json(updated);
+// ─── Cold storage routes ──────────────────────────────────────────────────────
+app.post('/api/cold-storages', auth, (req, res) => {
+  const { name } = req.body;
+  if (!name) return res.status(400).json({ error: 'Name required' });
+  res.json(db.createColdStorage(req.user.id, name));
 });
 
-app.get('/api/admin/users', (_req, res) => res.json(db.allUsers()));
+app.get('/api/cold-storages', auth, (req, res) => {
+  res.json(db.getUserColdStorages(req.user.id));
+});
+
+// ─── Room routes ──────────────────────────────────────────────────────────────
+app.post('/api/rooms', auth, (req, res) => {
+  const { cold_storage_id, name, category, product, product_emoji, quantity_kg } = req.body;
+  if (!cold_storage_id || !name || !category) return res.status(400).json({ error: 'Missing required fields' });
+  const room = db.createRoom(req.user.id, cold_storage_id, name, category, product, product_emoji, quantity_kg);
+  sensorHistory[room.room_key] = [];
+  anomalySteps[room.room_key]  = 0;
+  res.json(room);
+});
+
+app.get('/api/rooms', auth, (req, res) => {
+  const rooms        = db.getUserRooms(req.user.id);
+  const coldStorages = db.getUserColdStorages(req.user.id);
+  res.json({ rooms, coldStorages });
+});
+
+app.delete('/api/rooms/:id', auth, (req, res) => {
+  const roomId = parseInt(req.params.id);
+  const room   = db.getRoomById(roomId);
+  if (room && room.user_id === req.user.id) {
+    delete sensorHistory[room.room_key];
+    delete anomalySteps[room.room_key];
+  }
+  db.deleteRoom(roomId, req.user.id);
+  res.json({ success: true });
+});
 
 // ─── Sensor data ──────────────────────────────────────────────────────────────
-app.post('/api/sensor-data', (req, res) => {
-  const { roomId, temperature, humidity, co2, doorOpen } = req.body;
-  if (!sensorHistory[roomId]) return res.status(400).json({ error: 'Unknown roomId' });
-
-  const spoilageRisk = calcRisk(temperature, humidity, co2);
-  const point = { timestamp: new Date().toISOString(), temperature, humidity, co2, doorOpen, spoilageRisk };
-
-  sensorHistory[roomId].unshift(point);
-  if (sensorHistory[roomId].length > MAX_HIST) sensorHistory[roomId].pop();
-
-  checkAlerts(roomId, { temperature, humidity, co2, doorOpen });
-  io.emit('sensorUpdate', { roomId, data: point });
-  db.insertReading(roomId, temperature, humidity, co2, doorOpen ? 1 : 0, spoilageRisk);
-
-  res.json({ success: true, spoilageRisk });
-});
-
-app.get('/api/current', (_req, res) => {
-  const out = {};
-  Object.keys(sensorHistory).forEach(r => { out[r] = sensorHistory[r][0] || null; });
+app.get('/api/current', auth, (req, res) => {
+  const rooms = db.getUserRooms(req.user.id);
+  const out   = {};
+  rooms.forEach(r => { out[r.room_key] = sensorHistory[r.room_key]?.[0] || null; });
   res.json(out);
 });
 
-app.get('/api/history/:roomId',    (req, res) => res.json(sensorHistory[req.params.roomId] || []));
-app.get('/api/alerts',             (_req, res) => res.json(liveAlerts));
-app.get('/api/db/history/:roomId', (req, res) => res.json(db.getReadings(req.params.roomId)));
-app.get('/api/db/alerts',          (_req, res) => res.json(db.getAlerts()));
+app.get('/api/history/:roomKey', auth, (req, res) => {
+  res.json(sensorHistory[req.params.roomKey] || []);
+});
+
+app.get('/api/alerts', auth, (req, res) => {
+  const userRoomKeys = new Set(db.getUserRooms(req.user.id).map(r => r.room_key));
+  res.json(liveAlerts.filter(a => userRoomKeys.has(a.room)));
+});
+
+app.get('/api/db/history/:roomKey', auth, (req, res) => {
+  res.json(db.getReadings(req.params.roomKey));
+});
+
+app.get('/api/db/alerts', auth, (req, res) => {
+  res.json(db.getUserAlerts(req.user.id));
+});
 
 // ─── Socket.io ────────────────────────────────────────────────────────────────
 io.on('connection', socket => {
   console.log('Browser connected:', socket.id);
-  const current = {};
-  Object.keys(sensorHistory).forEach(r => { current[r] = sensorHistory[r][0] || null; });
-  socket.emit('initialData', { current, alerts: liveAlerts.slice(0, 30), history: sensorHistory });
   socket.on('disconnect', () => console.log('Browser disconnected:', socket.id));
 });
 
 // ─── Built-in Simulator ───────────────────────────────────────────────────────
-const SIM_ROOMS = {
-  'Room-A': { base_temp: 4.0, base_humidity: 88.0, base_co2: 600 },
-  'Room-B': { base_temp: 3.0, base_humidity: 92.0, base_co2: 700 },
-  'Room-C': { base_temp: 2.0, base_humidity: 85.0, base_co2: 500 },
-};
-const anomalySteps = { 'Room-A': 0, 'Room-B': 0, 'Room-C': 0 };
-let simStep = 0;
-
 function gauss(std) {
   let u = 0, v = 0;
   while (u === 0) u = Math.random();
@@ -154,12 +184,20 @@ function gauss(std) {
   return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v) * std;
 }
 
+let simStep = 0;
+
 function runSimulator() {
+  const rooms      = db.allRooms();
   const naturalVar = Math.sin(simStep * 0.08) * 0.4;
-  Object.entries(SIM_ROOMS).forEach(([roomId, cfg]) => {
-    let isAnomaly = false;
-    if (anomalySteps[roomId] > 0) { anomalySteps[roomId]--; isAnomaly = true; }
-    else if (Math.random() < 0.05) { anomalySteps[roomId] = Math.floor(Math.random() * 6) + 3; isAnomaly = true; }
+
+  rooms.forEach(room => {
+    const key = room.room_key;
+    if (!sensorHistory[key]) { sensorHistory[key] = []; anomalySteps[key] = 0; }
+
+    const cfg       = CATEGORY_BASES[room.category] || CATEGORY_BASES.fruits;
+    let isAnomaly   = false;
+    if (anomalySteps[key] > 0) { anomalySteps[key]--; isAnomaly = true; }
+    else if (Math.random() < 0.05) { anomalySteps[key] = Math.floor(Math.random() * 6) + 3; isAnomaly = true; }
 
     let temperature, humidity, co2, doorOpen;
     if (isAnomaly) {
@@ -178,22 +216,22 @@ function runSimulator() {
     humidity    = parseFloat(Math.min(100, Math.max(0, humidity)).toFixed(2));
     co2         = parseFloat(Math.max(300, co2).toFixed(1));
 
-    const spoilageRisk = calcRisk(temperature, humidity, co2);
-    const point = { timestamp: new Date().toISOString(), temperature, humidity, co2, doorOpen, spoilageRisk };
+    const spoilageRisk = calcRisk(temperature, humidity, co2, room.category);
+    const point        = { timestamp: new Date().toISOString(), temperature, humidity, co2, doorOpen, spoilageRisk, category: room.category };
 
-    sensorHistory[roomId].unshift(point);
-    if (sensorHistory[roomId].length > MAX_HIST) sensorHistory[roomId].pop();
+    sensorHistory[key].unshift(point);
+    if (sensorHistory[key].length > MAX_HIST) sensorHistory[key].pop();
 
-    checkAlerts(roomId, { temperature, humidity, co2, doorOpen });
-    io.emit('sensorUpdate', { roomId, data: point });
-    db.insertReading(roomId, temperature, humidity, co2, doorOpen ? 1 : 0, spoilageRisk);
+    checkAlerts(key, room.name, { temperature, humidity, co2, doorOpen }, room.category);
+    io.emit('sensorUpdate', { roomKey: key, data: point });
+    db.insertReading(key, temperature, humidity, co2, doorOpen ? 1 : 0, spoilageRisk);
   });
   simStep++;
 }
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
-  console.log(`\n🧊 ColdChain Guard Backend v2 running at http://localhost:${PORT}`);
+  console.log(`\n ColdChain Guard Backend running at http://localhost:${PORT}`);
   console.log('Storage: JSON files in ./data/');
   console.log('Built-in simulator: active (3s interval)\n');
   setInterval(runSimulator, 3000);

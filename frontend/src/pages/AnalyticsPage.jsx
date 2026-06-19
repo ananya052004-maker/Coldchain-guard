@@ -3,7 +3,7 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, BarChart, Bar, Legend,
 } from 'recharts';
-import { API, ROOMS, risk_color, risk_label, fmtDate } from '../shared';
+import { API, authHeaders, risk_color, risk_label, fmtDate } from '../shared';
 import Layout from '../Layout';
 
 function avg(arr, key)  { return arr.length ? arr.reduce((s, r) => s + (parseFloat(r[key]) || 0), 0) / arr.length : 0; }
@@ -39,20 +39,26 @@ function SectionLabel({ text }) {
 }
 
 export default function AnalyticsPage() {
-  const [history, setHistory] = useState({ 'Room-A': [], 'Room-B': [], 'Room-C': [] });
+  const [rooms,   setRooms]   = useState([]);
+  const [history, setHistory] = useState({});
   const [alerts,  setAlerts]  = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function load() {
       try {
-        const [rA, rB, rC, al] = await Promise.all([
-          fetch(`${API}/api/db/history/Room-A`).then(r => r.json()),
-          fetch(`${API}/api/db/history/Room-B`).then(r => r.json()),
-          fetch(`${API}/api/db/history/Room-C`).then(r => r.json()),
-          fetch(`${API}/api/db/alerts`).then(r => r.json()),
+        const { rooms: userRooms } = await fetch(`${API}/api/rooms`, { headers: authHeaders() }).then(r => r.json());
+        setRooms(userRooms || []);
+        const [histResults, al] = await Promise.all([
+          Promise.all((userRooms || []).map(room =>
+            fetch(`${API}/api/db/history/${room.room_key}`, { headers: authHeaders() })
+              .then(r => r.json()).then(data => ({ key: room.room_key, data }))
+          )),
+          fetch(`${API}/api/db/alerts`, { headers: authHeaders() }).then(r => r.json()),
         ]);
-        setHistory({ 'Room-A': rA, 'Room-B': rB, 'Room-C': rC });
+        const hist = {};
+        histResults.forEach(({ key, data }) => { hist[key] = data; });
+        setHistory(hist);
         setAlerts(al);
       } catch (e) { console.error(e); }
       finally { setLoading(false); }
@@ -60,10 +66,10 @@ export default function AnalyticsPage() {
     load();
   }, []);
 
-  const all = [...history['Room-A'], ...history['Room-B'], ...history['Room-C']];
+  const all = rooms.flatMap(r => history[r.room_key] || []);
 
-  function chartData(roomId) {
-    return [...history[roomId]].reverse().slice(-60).map(r => ({
+  function chartData(roomKey) {
+    return [...(history[roomKey] || [])].reverse().slice(-60).map(r => ({
       t:           fmtDate(r.created_at),
       temperature: +parseFloat(r.temperature).toFixed(1),
       humidity:    +parseFloat(r.humidity).toFixed(1),
@@ -72,11 +78,12 @@ export default function AnalyticsPage() {
     }));
   }
 
-  const alertBreakdown = Object.keys(ROOMS).map(id => ({
-    room:     id,
-    critical: alerts.filter(a => a.room_id === id && a.severity === 'critical').length,
-    warning:  alerts.filter(a => a.room_id === id && a.severity === 'warning').length,
-    total:    alerts.filter(a => a.room_id === id).length,
+  const alertBreakdown = rooms.map(room => ({
+    room:     room.name,
+    key:      room.room_key,
+    critical: alerts.filter(a => a.room_id === room.room_key && a.severity === 'critical').length,
+    warning:  alerts.filter(a => a.room_id === room.room_key && a.severity === 'warning').length,
+    total:    alerts.filter(a => a.room_id === room.room_key).length,
   }));
 
   if (loading) return (
@@ -118,17 +125,17 @@ export default function AnalyticsPage() {
               </tr>
             </thead>
             <tbody>
-              {Object.entries(ROOMS).map(([id, room]) => {
-                const rows = history[id];
+              {rooms.map(room => {
+                const rows = history[room.room_key] || [];
                 const avgR = avg(rows, 'spoilage_risk');
                 return (
-                  <tr key={id}>
+                  <tr key={room.room_key}>
                     <td style={{ padding: '12px', borderBottom: '1px solid #111' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                        <span>{room.emoji}</span>
+                        <span>{room.product_emoji}</span>
                         <div>
-                          <div style={{ color: '#fff', fontWeight: 600 }}>{id}</div>
-                          <div style={{ color: '#555', fontSize: 11 }}>{room.name}</div>
+                          <div style={{ color: '#fff', fontWeight: 600 }}>{room.name}</div>
+                          <div style={{ color: '#555', fontSize: 11 }}>{room.product} · {room.quantity_kg} kg</div>
                         </div>
                       </div>
                     </td>
@@ -150,16 +157,16 @@ export default function AnalyticsPage() {
 
         {/* Temperature trends */}
         <SectionLabel text="Temperature Trends (°C)" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 28 }}>
-          {Object.entries(ROOMS).map(([id, room]) => {
-            const data = chartData(id);
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 14, marginBottom: 28 }}>
+          {rooms.map(room => {
+            const data = chartData(room.room_key);
             return (
-              <ChartCard key={id} title={`${room.emoji} ${id}`} sub={`${room.name} — last ${data.length} readings`}>
+              <ChartCard key={room.room_key} title={`${room.product_emoji} ${room.name}`} sub={`last ${data.length} readings`}>
                 {data.length > 1 ? (
                   <ResponsiveContainer width="100%" height={140}>
                     <AreaChart data={data} margin={{ top: 4, right: 8, bottom: 0, left: -16 }}>
                       <defs>
-                        <linearGradient id={`temp-${id}`} x1="0" y1="0" x2="0" y2="1">
+                        <linearGradient id={`temp-${room.room_key}`} x1="0" y1="0" x2="0" y2="1">
                           <stop offset="5%"  stopColor="#c8a870" stopOpacity={0.3} />
                           <stop offset="95%" stopColor="#c8a870" stopOpacity={0} />
                         </linearGradient>
@@ -168,7 +175,7 @@ export default function AnalyticsPage() {
                       <XAxis dataKey="t" tick={{ fontSize: 9, fill: '#444' }} interval="preserveStartEnd" axisLine={false} tickLine={false} />
                       <YAxis tick={{ fontSize: 9, fill: '#444' }} domain={['auto','auto']} axisLine={false} tickLine={false} />
                       <Tooltip {...TT} formatter={v => [`${v}°C`, 'Temp']} />
-                      <Area type="monotone" dataKey="temperature" stroke="#c8a870" fill={`url(#temp-${id})`} strokeWidth={1.5} dot={false} />
+                      <Area type="monotone" dataKey="temperature" stroke="#c8a870" fill={`url(#temp-${room.room_key})`} strokeWidth={1.5} dot={false} />
                     </AreaChart>
                   </ResponsiveContainer>
                 ) : <div style={{ textAlign: 'center', color: '#444', padding: 30, fontSize: 13 }}>Collecting data…</div>}
@@ -179,16 +186,16 @@ export default function AnalyticsPage() {
 
         {/* Humidity trends */}
         <SectionLabel text="Humidity Trends (%)" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 28 }}>
-          {Object.entries(ROOMS).map(([id, room]) => {
-            const data = chartData(id);
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 14, marginBottom: 28 }}>
+          {rooms.map(room => {
+            const data = chartData(room.room_key);
             return (
-              <ChartCard key={id} title={`${room.emoji} ${id}`} sub={`${room.name} — last ${data.length} readings`}>
+              <ChartCard key={room.room_key} title={`${room.product_emoji} ${room.name}`} sub={`last ${data.length} readings`}>
                 {data.length > 1 ? (
                   <ResponsiveContainer width="100%" height={140}>
                     <AreaChart data={data} margin={{ top: 4, right: 8, bottom: 0, left: -16 }}>
                       <defs>
-                        <linearGradient id={`hum-${id}`} x1="0" y1="0" x2="0" y2="1">
+                        <linearGradient id={`hum-${room.room_key}`} x1="0" y1="0" x2="0" y2="1">
                           <stop offset="5%"  stopColor="#60a5fa" stopOpacity={0.2} />
                           <stop offset="95%" stopColor="#60a5fa" stopOpacity={0} />
                         </linearGradient>
@@ -197,7 +204,7 @@ export default function AnalyticsPage() {
                       <XAxis dataKey="t" tick={{ fontSize: 9, fill: '#444' }} interval="preserveStartEnd" axisLine={false} tickLine={false} />
                       <YAxis tick={{ fontSize: 9, fill: '#444' }} domain={['auto','auto']} axisLine={false} tickLine={false} />
                       <Tooltip {...TT} formatter={v => [`${v}%`, 'Humidity']} />
-                      <Area type="monotone" dataKey="humidity" stroke="#60a5fa" fill={`url(#hum-${id})`} strokeWidth={1.5} dot={false} />
+                      <Area type="monotone" dataKey="humidity" stroke="#60a5fa" fill={`url(#hum-${room.room_key})`} strokeWidth={1.5} dot={false} />
                     </AreaChart>
                   </ResponsiveContainer>
                 ) : <div style={{ textAlign: 'center', color: '#444', padding: 30, fontSize: 13 }}>Collecting data…</div>}
@@ -208,16 +215,16 @@ export default function AnalyticsPage() {
 
         {/* Spoilage risk trends */}
         <SectionLabel text="Spoilage Risk Trends (%)" />
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14, marginBottom: 28 }}>
-          {Object.entries(ROOMS).map(([id, room]) => {
-            const data = chartData(id);
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 14, marginBottom: 28 }}>
+          {rooms.map(room => {
+            const data = chartData(room.room_key);
             return (
-              <ChartCard key={id} title={`${room.emoji} ${id}`} sub={`${room.name} — last ${data.length} readings`}>
+              <ChartCard key={room.room_key} title={`${room.product_emoji} ${room.name}`} sub={`last ${data.length} readings`}>
                 {data.length > 1 ? (
                   <ResponsiveContainer width="100%" height={140}>
                     <AreaChart data={data} margin={{ top: 4, right: 8, bottom: 0, left: -16 }}>
                       <defs>
-                        <linearGradient id={`risk-${id}`} x1="0" y1="0" x2="0" y2="1">
+                        <linearGradient id={`risk-${room.room_key}`} x1="0" y1="0" x2="0" y2="1">
                           <stop offset="5%"  stopColor="#f87171" stopOpacity={0.2} />
                           <stop offset="95%" stopColor="#f87171" stopOpacity={0} />
                         </linearGradient>
@@ -226,7 +233,7 @@ export default function AnalyticsPage() {
                       <XAxis dataKey="t" tick={{ fontSize: 9, fill: '#444' }} interval="preserveStartEnd" axisLine={false} tickLine={false} />
                       <YAxis tick={{ fontSize: 9, fill: '#444' }} domain={[0, 100]} axisLine={false} tickLine={false} />
                       <Tooltip {...TT} formatter={v => [`${v}%`, 'Risk']} />
-                      <Area type="monotone" dataKey="risk" stroke="#f87171" fill={`url(#risk-${id})`} strokeWidth={1.5} dot={false} />
+                      <Area type="monotone" dataKey="risk" stroke="#f87171" fill={`url(#risk-${room.room_key})`} strokeWidth={1.5} dot={false} />
                     </AreaChart>
                   </ResponsiveContainer>
                 ) : <div style={{ textAlign: 'center', color: '#444', padding: 30, fontSize: 13 }}>Collecting data…</div>}

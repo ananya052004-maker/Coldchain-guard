@@ -24,7 +24,7 @@ export default function LoginPage() {
       const data = await res.json();
       if (!res.ok) { setError(data.error || 'Something went wrong'); setLoading(false); return; }
       setAuth(data.token, data.user);
-      navigate(data.user.crop ? '/dashboard' : '/setup');
+      navigate('/dashboard');
     } catch {
       setError('Cannot reach server. Is the backend running?');
       setLoading(false);
