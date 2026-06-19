@@ -1,5 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ROOMS, clearAuth, getUser } from './shared';
+import { clearAuth, getUser } from './shared';
 
 export default function Layout({ children, socket }) {
   const navigate  = useNavigate();
@@ -113,15 +113,13 @@ export default function Layout({ children, socket }) {
           </div>
 
           <div>
-            <div style={{ fontSize: 12, color: '#c8a870', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 16, fontWeight: 600 }}>Rooms</div>
-            {Object.entries(ROOMS).map(([id, r]) => (
-              <div key={id} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12, cursor: 'pointer' }}
-                onClick={() => navigate(`/room/${id}`)}>
-                <span style={{ fontSize: 14 }}>{r.emoji}</span>
-                <div>
-                  <div style={{ fontSize: 13, color: '#ccc' }}>{id}</div>
-                  <div style={{ fontSize: 11, color: '#555' }}>{r.name}</div>
-                </div>
+            <div style={{ fontSize: 12, color: '#c8a870', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 16, fontWeight: 600 }}>Navigate</div>
+            {['/dashboard', '/live-alerts', '/analytics'].map(to => (
+              <div key={to} onClick={() => navigate(to)}
+                style={{ fontSize: 13, color: '#aaa', marginBottom: 10, cursor: 'pointer', textTransform: 'capitalize' }}
+                onMouseEnter={e => e.target.style.color = '#fff'}
+                onMouseLeave={e => e.target.style.color = '#aaa'}>
+                {to.replace('/', '').replace('-', ' ') || 'dashboard'}
               </div>
             ))}
           </div>
