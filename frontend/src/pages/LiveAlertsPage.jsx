@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { API, authHeaders, fmtDate } from '../shared';
+import { API, authHeaders, severity_color, urgency_color, fmtDate } from '../shared';
 import Layout from '../Layout';
 
 export default function LiveAlertsPage() {
   const [alerts,   setAlerts]   = useState([]);
+  const [insights, setInsights] = useState([]);
   const [rooms,    setRooms]    = useState([]);
   const [filter,   setFilter]   = useState('all');
   const [room,     setRoom]     = useState('all');
@@ -18,9 +19,14 @@ export default function LiveAlertsPage() {
       .then(data => { setAlerts(data); setLoading(false); })
       .catch(() => setLoading(false));
 
+    fetch(`${API}/api/insights`, { headers: authHeaders() })
+      .then(r => r.json()).then(setInsights).catch(() => {});
+
     const interval = setInterval(() => {
       fetch(`${API}/api/db/alerts`, { headers: authHeaders() })
         .then(r => r.json()).then(setAlerts).catch(() => {});
+      fetch(`${API}/api/insights`, { headers: authHeaders() })
+        .then(r => r.json()).then(setInsights).catch(() => {});
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -32,8 +38,10 @@ export default function LiveAlertsPage() {
     return true;
   });
 
-  const liveAlerts   = alerts.filter(a => now - new Date(a.created_at) < 60_000);
-  const criticalCount = alerts.filter(a => a.severity === 'critical').length;
+  const liveAlerts     = alerts.filter(a => now - new Date(a.created_at) < 60_000);
+  const criticalCount  = alerts.filter(a => a.severity === 'critical').length;
+  const predictiveCount = alerts.filter(a => a.severity === 'predictive').length;
+  const warningCount   = alerts.length - criticalCount - predictiveCount;
 
   function timeAgo(iso) {
     const diff = Math.floor((now - new Date(iso)) / 1000);
@@ -63,11 +71,12 @@ export default function LiveAlertsPage() {
         </div>
 
         {/* Stats bar */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 12, marginBottom: 28 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5,1fr)', gap: 12, marginBottom: 28 }}>
           {[
             { label: 'Total Alerts',   val: alerts.length,        color: '#fff'    },
             { label: 'Critical',       val: criticalCount,         color: '#f87171' },
-            { label: 'Warnings',       val: alerts.length - criticalCount, color: '#fbbf24' },
+            { label: 'Warnings',       val: warningCount,          color: '#fbbf24' },
+            { label: 'Predicted',      val: predictiveCount,       color: '#a78bfa' },
             { label: 'Last 60s',       val: liveAlerts.length,    color: liveAlerts.length > 0 ? '#f87171' : '#4ade80' },
           ].map(s => (
             <div key={s.label} style={{ background: '#0a0a0a', border: '1px solid #1e1e1e', borderRadius: 10, padding: '16px 18px' }}>
@@ -77,10 +86,35 @@ export default function LiveAlertsPage() {
           ))}
         </div>
 
+        {/* AI Insights */}
+        {insights.length > 0 && (
+          <div style={{ background: '#0a0a0a', border: '1px solid #2a2450', borderTop: '2px solid #a78bfa', borderRadius: 12, padding: '20px 24px', marginBottom: 28 }}>
+            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span>✨</span> AI Incident Diagnosis
+            </div>
+            {insights.slice(0, 4).map(i => (
+              <div key={i.id} style={{ padding: '12px 14px', borderRadius: 8, marginBottom: 8, background: '#0d0d16', border: '1px solid #24204a' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6 }}>
+                  <div style={{ display: 'flex', gap: 8 }}>
+                    <span style={{
+                      fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em',
+                      color: urgency_color(i.urgency), background: `${urgency_color(i.urgency)}15`, padding: '2px 8px', borderRadius: 4,
+                    }}>{i.urgency}</span>
+                    <span style={{ fontSize: 11, color: '#555', background: '#111', padding: '2px 8px', borderRadius: 4, border: '1px solid #1e1e1e' }}>{i.roomName}</span>
+                  </div>
+                  <span style={{ fontSize: 11, color: '#555' }}>{fmtDate(i.timestamp)}</span>
+                </div>
+                <div style={{ fontSize: 13, color: '#ddd' }}><strong style={{ color: '#c9b8ff' }}>Root cause:</strong> {i.rootCause}</div>
+                <div style={{ fontSize: 13, color: '#ddd', marginTop: 4 }}><strong style={{ color: '#c9b8ff' }}>Recommendation:</strong> {i.recommendation}</div>
+              </div>
+            ))}
+          </div>
+        )}
+
         {/* Filters */}
         <div style={{ display: 'flex', gap: 10, marginBottom: 20, alignItems: 'center' }}>
           <span style={{ fontSize: 13, color: '#666' }}>Filter:</span>
-          {['all', 'critical', 'warning'].map(f => (
+          {['all', 'critical', 'warning', 'predictive'].map(f => (
             <button key={f} onClick={() => setFilter(f)} style={{
               padding: '6px 16px', borderRadius: 6, cursor: 'pointer', fontSize: 13,
               background: filter === f ? '#1a1a1a' : 'transparent',
@@ -116,8 +150,7 @@ export default function LiveAlertsPage() {
           ) : (
             <div style={{ padding: '8px 0' }}>
               {filtered.map((a, i) => {
-                const crit  = a.severity === 'critical';
-                const color = crit ? '#f87171' : '#fbbf24';
+                const color = severity_color(a.severity);
                 const isNew = now - new Date(a.created_at) < 60_000;
                 return (
                   <div key={a.id} style={{

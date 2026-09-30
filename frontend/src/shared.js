@@ -92,6 +92,15 @@ export function authHeaders() {
 export const risk_color = (r) => r < 30 ? '#4ade80' : r < 60 ? '#fbbf24' : '#f87171';
 export const risk_label = (r) => r < 30 ? 'Safe'    : r < 60 ? 'Warning'  : 'Critical';
 
+export const severity_color = (s) => s === 'critical' ? '#f87171' : s === 'predictive' ? '#a78bfa' : '#fbbf24';
+export const urgency_color  = (u) => u === 'high' ? '#f87171' : u === 'low' ? '#4ade80' : '#fbbf24';
+
+export function trendArrow(slopePerMin, threshold = 0.05) {
+  if (slopePerMin > threshold)  return '↑';
+  if (slopePerMin < -threshold) return '↓';
+  return '→';
+}
+
 export function fmt(iso) {
   if (!iso) return '—';
   return new Date(iso).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });

@@ -38,6 +38,10 @@ function RoomCard({ room, data, history, onClick }) {
   const wC    = data?.co2 > (cat.co2 || 1000);
   const warn  = wT || wH || wC || data?.doorOpen;
 
+  const forecastBreach = data?.forecast?.metrics
+    ? Object.entries(data.forecast.metrics).find(([, f]) => f.breachInSec != null)
+    : null;
+
   const chart = [...(history || [])].reverse().slice(-20).map(d => ({
     t: fmt(d.timestamp), v: +d.temperature?.toFixed(1),
   }));
@@ -69,6 +73,12 @@ function RoomCard({ room, data, history, onClick }) {
         {data?.doorOpen && (
           <div style={{ padding: '7px 10px', borderRadius: 6, marginBottom: 12, background: '#1a1400', border: '1px solid #4a3800', fontSize: 12, color: '#fbbf24' }}>
             🚪 Door is open
+          </div>
+        )}
+
+        {forecastBreach && (
+          <div style={{ padding: '7px 10px', borderRadius: 6, marginBottom: 12, background: '#150f28', border: '1px solid #3a2f6a', fontSize: 12, color: '#a78bfa' }}>
+            ⟡ Predicted breach in ~{Math.max(1, Math.round(forecastBreach[1].breachInSec / 60))} min
           </div>
         )}
 
@@ -244,7 +254,7 @@ function DashboardPage() {
   }, [activeKeys]);
 
   useEffect(() => {
-    const socket = io(API, { transports: ['websocket', 'polling'] });
+    const socket = io(API, { transports: ['websocket', 'polling'], auth: { token: getToken() } });
     socketRef.current = socket;
     socket.on('connect',    () => setConnected(true));
     socket.on('disconnect', () => setConnected(false));
