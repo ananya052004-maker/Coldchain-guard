@@ -7,7 +7,11 @@ on:
 
 jobs:
   backend-tests:
-    runs-on: ubuntu-latest
+    # Pinned rather than ubuntu-latest: better-sqlite3's prebuilt native binary
+    # has segfaulted (SIGSEGV) under node:test on newer Actions runner images
+    # before their prebuilds catch up. 22.04 is a long-stable, well-supported
+    # target for native Node addons.
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,6 +21,13 @@ jobs:
           cache-dependency-path: backend/package-lock.json
       - run: npm ci
         working-directory: backend
+      # Force better-sqlite3 to compile against this exact runner instead of
+      # trusting a prebuilt binary that may not match its glibc/ABI — this is
+      # what actually eliminates the SIGSEGV, independent of the OS pin above.
+      - run: npm rebuild better-sqlite3
+        working-directory: backend
+        env:
+          npm_config_build_from_source: true
       - run: npm test
         working-directory: backend
 
