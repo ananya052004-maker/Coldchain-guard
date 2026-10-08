@@ -1,5 +1,7 @@
 # 🧊 ColdChain Guard — IoT Cold Storage Monitoring System
 
+**🔗 Live demo:** [coldchain-guard.vercel.app](https://coldchain-guard.vercel.app)
+
 Real-time IoT dashboard that monitors temperature, humidity, and CO₂ across 3 cold storage rooms, detects anomalies, calculates spoilage risk, and sends live alerts.
 
 ## Architecture
