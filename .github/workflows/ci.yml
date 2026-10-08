@@ -17,6 +17,11 @@ jobs:
           cache-dependency-path: backend/package-lock.json
       - run: npm ci
         working-directory: backend
+      - name: Diagnose better-sqlite3 (temporary)
+        working-directory: backend
+        run: |
+          node -e "console.log(process.version, process.platform, process.arch)"
+          node -e "const Database = require('better-sqlite3'); const db = new Database(':memory:'); db.exec('CREATE TABLE t (id INTEGER)'); db.prepare('INSERT INTO t (id) VALUES (1)').run(); console.log('better-sqlite3 bare OK:', db.prepare('SELECT * FROM t').get());"
       - run: npm test
         working-directory: backend
 
