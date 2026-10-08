@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "simulator": "node simulator.js",
-    "test": "node --test"
+    "test": "node --test risk.test.js && node --test server.test.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.120.0",
